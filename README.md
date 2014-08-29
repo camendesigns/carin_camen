@@ -13,5 +13,5 @@ http://viewmyresumetoday.com<br>
 https://github.com/camendesigns<br>
 http://www.linkedin.com/in/carincamen
 
-Resources:
+Resources:<br>
 https://github.com/Prinzhorn/skrollr
