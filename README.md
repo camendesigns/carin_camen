@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [HTML5 Boilerplate](http://html5boilerplate.com)
 
 HTML5 Boilerplate is a professional front-end template for building fast,
@@ -59,3 +60,22 @@ want to write about your project.
 
 Anyone and everyone is welcome to [contribute](CONTRIBUTING.md). Hundreds of
 developers have helped make the HTML5 Boilerplate what it is today.
+=======
+carin_camen
+===========
+
+Portfolio Website<br>
+Carin Camen<br>
+Camen Designs<br>
+BFA Graphic Design<br>
+Graphic/Web Designer<br>
+http://www.camendesigns.com<br>
+http://www.carincamenportfolio.com<br>
+http://cariluzen.com<br>
+http://viewmyresumetoday.com<br>
+https://github.com/camendesigns<br>
+http://www.linkedin.com/in/carincamen
+
+Resources:<br>
+https://github.com/Prinzhorn/skrollr
+>>>>>>> FETCH_HEAD
