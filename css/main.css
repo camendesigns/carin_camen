@@ -1,10 +1,14 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/* Site built starting with Twitter Bootstrap and adding some HTML5 Boilerplate features with WebStorm.
+ * Created by Carin Camen of Camen Designs camendesigns.com */
 
 /*
+ * HTML5 Boilerplate
+ *
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -83,6 +87,17 @@ textarea {
 }
 
 /* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
 
@@ -93,27 +108,764 @@ textarea {
     padding: 0.2em 0;
 }
 
+/* =========================================================================
+    Page structure
+   ========================================================================== */
+
+html,body {
+    font-size: 18px;
+    background-color: #ffffff;
+    padding:0;
+    margin:0;
+    max-width: 1984px;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* =Header */
+
+
+#header {
+    max-width: 1290px;
+    height: 35px;
+    position: fixed;
+    margin: 10px,25px,10px,0;
+}
+
+/* =Content */
+
+#content {
+    position: relative;
+    max-width: 1290;
+    height: 8000px;
+    width: 100%;
+
+}
+
+
+/* =Section */
+
+#section {
+    max-width: 1180px;
+    width: 95%;
+    height: 100%;
+    margin: 45 15 15 15;
+    z-index: 1;
+
+}
+
+
+.footer {
+    position: absolute;
+    top: 730px;
+    left: -50px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+
+.bcg {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* unvisited link */
+a:link    {
+    color: black;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover   {
+    color: white;
+}
+
+/* =========================================================================
+    Font structure
+
+   ========================================================================== */
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+h1 {
+    font-size: 4em;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    line-height: 0.5%;
+    text-align: center;
+
+}
+
+
+h2 {
+    font-size: 3em;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+h3 {
+    font-size: 1.5em;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 1;
+}
+
+
+h4 {
+    font-size: 1em;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+
+
+h5 {
+    font-size: .75em;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+h6 {
+    font-size: .50em;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+
+p {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.title {
+    line-height: 1;
+
+}
+
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.nav{
+    position: fixed;
+    float: right;
+    margin-top: 15px;
+    margin-left: 50px;
+    width: 128px;
+    height: 128px;
+    z-index: 999;
+}
+
+.nav img{
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0px 1px 1px #000;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.45s;
+}
+
+.menu{
+    border-radius: 2px 0 0 2px;
+    box-shadow: 0px 0px 0px #000;
+    padding: 4px 0;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 95px;
+    z-index: 999;
+}
+
+.menu div{
+    background: rgb(0, 0, 0);
+    border-radius: 2px;
+    margin: 1px 5px;
+    width: 30px;
+    height: 4px;
+    transition: height 0.45s;
+}
+
+.menu:hover > div{
+    height: 1px;
+}
+
+.menu:hover + img{
+    opacity:0.4;
+}
+
+.menu > a{
+    color: rgba(35, 35, 35, 0.5);
+    display: block;
+    text-align: left;
+    font-size: 0em;
+    padding: 0;
+    transition: padding 0.1s;
+}
+
+.menu:hover > a{
+    font-size: 1em;
+    padding: 5px 0 0 0;
+}
+
+.menu > a:hover{
+    color: rgba(35, 35, 35, 1);
+    transition: color 0.1s;
+}
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+
+
+#parallax {
+    z-index: 4;
+    position: absolute;
+    max-width: 1290px;
+    left: 70px;
+    padding: 0 10px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+
+/*  Parallax  foundation - sky */
+
+#parallax-bcg1 {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 1200px;
+
+
+}
+#bcg1-1 {
+    position: absolute;
+
+}
+
+/*  Parallax  background - large clouds */
+#parallax-bcg2 {
+    z-index: 2;
+    position: fixed;
+    left: 70%; /* align left edge with center of viewport */
+    top: 0;
+    width: 1200px;
+    margin-left: -600px; /* move left by half element's width */
+}
+#bcg2-1 {
+    position: absolute;
+    top: 85px;
+    left: 70px;
+}
+#bcg2-2 {
+    position: absolute;
+    top: 440px;
+    left: 695px;
+}
+#bcg2-3 {
+    position: absolute;
+    top: 900px;
+    left: -220px;
+}
+#bcg2-4 {
+    position: absolute;
+    top: 1220px;
+    left: 950px;
+}
+
+#bcg2-5 {
+    position: absolute;
+    top: 1600px;
+    left: -270px;
+}
+
+#bcg2-6 {
+    position: absolute;
+    top: 1900px;
+    left: 695px;
+}
+
+#bcg2-7 {
+    position: absolute;
+    top: 2100px;
+    left: 950px;
+}
+#bcg2-8 {
+    position: absolute;
+    top: 2440px;
+    left: -270px;
+}
+
+#bcg2-9 {
+    position: absolute;
+    top: 2800px;
+    left: 650px;
+}
+
+/* Parallax mid ground - small clouds */
+#parallax-bcg3 {
+    z-index: 3;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 0;
+    width: 1200px;
+    margin-left: -600px; /* move left by half element's width */
+
+}
+#bcg3-1 {
+    position: absolute;
+    top: 165px;
+    left: 200px;
+}
+#bcg3-2 {
+    position: absolute;
+    top: 300px;
+    left: 1150px;
+}
+#bcg3-3 {
+    position: absolute;
+    top: 550px;
+    left: -35px;
+}
+#bcg3-4 {
+    position: absolute;
+    top: 900px;
+    left: 250px;
+}
+#bcg3-5 {
+    position: absolute;
+    top: 1180px;
+    left: 890px;
+}
+
+#bcg3-6 {
+    position: absolute;
+    top: 1500px;
+    left: 200px;
+}
+#bcg3-7 {
+    position: absolute;
+    top: 1900px;
+    left: 1150px;
+}
+#bcg3-8 {
+    position: absolute;
+    top: 2300px;
+    left: -35px;
+}
+
+#bcg3-9 {
+    position: absolute;
+    top: 2700px;
+    left: 250px;
+}
+
+#bcg3-10 {
+    position: absolute;
+    top: 3100px;
+    left: 655px;
+}
+
+#bcg3-11 {
+    position: absolute;
+    top: 3500px;
+    left: 1150px;
+}
+
+/* Parallax foreground - Copy */
+#parallax-bcg4 {
+    z-index: 4;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 25px;
+    width: 1200px;
+    height: 125px;
+    margin-left: -585px; /* move left by half element's width */
+
+}
+
+#bcg4-1 {
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
+#bcg4-2 {
+    position: absolute;
+    top: 812px;
+    left: 321px;
+}
+#bcg4-3 {
+    position: absolute;
+    top: 1628px;
+    left: 403px;
+}
+#bcg4-4 {
+    position: absolute;
+    top: 2700px;
+    left: -85px;
+}
+
+/* Parallax foreground - Logo Top */
+#parallax-bcg5-logo {
+    z-index: 5;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 60px;
+    width: 1200px;
+    margin-left: -540px; /* move left by half element's width */
+}
+
+#bcg5-1 {
+    position: absolute;
+    top: 415px;
+    left: 550px;
+}
+
+/* Parallax foreground - Logo Bottom */
+#parallax-bcg6-logo {
+    z-index: 6;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 60px;
+    width: 1200px;
+    margin-left: -540px; /* move left by half element's width */
+}
+
+#bcg6-1 {
+    position: absolute;
+    top: 350px;
+    left: 550px;
+}
+
+
+/* Parallax foreground - Balloons */
+#parallax-bcg7 {
+    z-index: 7;
+    position: relative;
+    left: 50%; /* align left edge with center of viewport */
+    top: 2000px;
+    width: 1984px;
+    margin-left: -585px; /* move left by half element's width */
+}
+
+
+#bcg7-1-web {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}
+
+#bcg7-1-webCopy {
+    position: absolute;
+    width: 750px;
+    height: 100%;
+    top: 400px;
+    left: 400px;
+}
+
+#bcg7-1-design {
+    position: absolute;
+    top: 1500px;
+    left: 1150px;
+}
+
+#bcg7-1-designCopy {
+    position: absolute;
+    width: 750px;
+    height: 100%;
+    top: 1400px;
+    left: 250px;
+}
+
+#bcg7-1-copy {
+    position: absolute;
+    top: 2600px;
+    left: 350px;
+}
+
+#bcg7-1-copyCopy {
+    position: absolute;
+    width: 750px;
+    height: 100%;
+    top: 2500px;
+    left: 550px;
+}
+
+#bcg7-1-illustration {
+    position: absolute;
+    top: 3600px;
+    left: 950px;
+}
+
+#bcg7-1-illustrationCopy {
+    position: absolute;
+    width: 750px;
+    height: 100%;
+    top: 3500px;
+    left: -10px;
+}
+
+#bcg7-1-photography {
+    position: absolute;
+    top: 4700px;
+    left: 200px;
+}
+
+#bcg7-1-photographyCopy {
+    position: absolute;
+    width: 750px;
+    height: 100%;
+    top: 4600px;
+    left: 500px;
+}
+
+/* =========================================================================
+    Slider Preview
+
+   ========================================================================== */
+
+.slide {
+    position: relative;
+}
+.slide .inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+.slider-web {
+    position: absolute;
+    width: 750px;
+    height: 250px;
+    top: 800px;
+    left: 400px;
+    background-color: black;
+
+
+}
+
+.slider-design {
+    position: absolute;
+    width: 750px;
+    height: 250px;
+    top: 1750px;
+    left: 250px;
+    background-color: black;
+
+
+}
+
+.slide-design {
+
+}
+
+.slider-copy {
+    position: absolute;
+    width: 750px;
+    height: 250px;
+    top: 2900px;
+    left: 550px;
+    background-color: black;
+
+
+}
+
+.slide-copy {
+
+}
+
+.slider-illustration {
+    position: absolute;
+    width: 750px;
+    height: 250px;
+    top: 3900px;
+    left: -10px;
+    background-color: black;
+
+
+}
+
+.slide-illustration {
+
+}
+
+.slider-photography {
+    position: absolute;
+    width: 750px;
+    height: 250px;
+    top: 5000px;
+    left: 500px;
+    background-color: black;
+
+
+}
+
+.slide-photography {
+
+}
+
+
+
+
+/* ==========================================================================
+   Resize Images
+   ========================================================================== */
+img.ri-1
+{
+    position: absolute;
+    max-width: 80%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-1:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-2
+{
+    position: absolute;
+    max-width: 50%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-2:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-3
+{
+    position: absolute;
+    max-width: 70%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-3:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-4
+{
+    position: absolute;
+    max-width: 90%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-4:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-5
+{
+    position: absolute;
+    max-width: 90%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-5:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-6
+{
+    position: absolute;
+    max-width: 90%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-6:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-7
+{
+    position: absolute;
+    max-width: 60%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-7:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+
 /* =General */
 
-/* =Header */
-
-/* =Introduction */
-
-/* =Camen Designs */
-
-/* =View My Resume Today */
-
-/* =Carin Camen Portfolio */
-
-/* =Carilu */
-
-/* =Cariluzen */
-
-/* =Footer */
 
 
 
@@ -121,24 +873,12 @@ textarea {
 /* ==========================================================================
    Media Queries Minimum Width 480px
    ========================================================================== */
+@media (min-width: 480px) {
 
-/* =General */
 
-/* =Header */
+}
 
-/* =Introduction */
 
-/* =Camen Designs */
-
-/* =View My Resume Today */
-
-/* =Carin Camen Portfolio */
-
-/* =Carilu */
-
-/* =Cariluzen */
-
-/* =Footer */
 
 
 
@@ -146,54 +886,75 @@ textarea {
    Media Queries Minimum Width 768px
    ========================================================================== */
 
-/* =General */
+@media (min-width: 768px) {
 
-/* =Header */
+}
+body, html {
+    height: auto;
+}
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
 
-/* =Introduction */
+#content {
+    position: relative;
+    height: 8000px;
 
-/* =Camen Designs */
+}
 
-/* =View My Resume Today */
+/* Parallax foreground - Logo Top */
+#parallax-bcg5-logo {
+    z-index: 5;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 60px;
+    width: 1200px;
+    margin-left: -540px; /* move left by half element's width */
+}
 
-/* =Carin Camen Portfolio */
+#bcg5-1 {
+    position: absolute;
+    top: 415px;
+    left: 550px;
+}
 
-/* =Carilu */
+/* Parallax foreground - Logo Bottom */
+#parallax-bcg6-logo {
+    z-index: 6;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: 60px;
+    width: 1200px;
+    margin-left: -540px; /* move left by half element's width */
+}
 
-/* =Cariluzen */
+#bcg6-1 {
+    position: absolute;
+    top: 350px;
+    left: 550px;
+}
 
-/* =Footer */
+
+
 
 /* ==========================================================================
    Media Queries Minimum Width 1140px
    ========================================================================== */
+@media (min-width: 1140px) {
 
-/* =General */
-
-/* =Header */
-
-/* =Introduction */
-
-/* =Camen Designs */
-
-/* =View My Resume Today */
-
-/* =Carin Camen Portfolio */
-
-/* =Carilu */
-
-/* =Cariluzen */
-
-/* =Footer */
+}
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
-/*
- * Image replacement
- */
+/* Image replacement */
 
 .ir {
     background-color: transparent;
@@ -297,66 +1058,6 @@ textarea {
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    body, html {
-        height: auto;
-    }
-    .bcg {
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-    }
-    section {
-        min-width: 768px;
-        height: 600px;
-    }
-    .hsContainer {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-    .hsContent {
-        max-width: 700px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        text-align: left;
-        padding: 0;
-    }
-    .hsContent h2  {
-        font-size: 35px;
-        line-height: 38px;
-    }
-    .hsContent p {
-        width: 400px;
-    }
-    #slide-1 .hsContent {
-        bottom: 200px;
-        top: auto;
-        margin-left: -80px;
-    }
-    #slide-2 .hsContent {
-        margin-left: -340px;
-        top: auto;
-    }
-    #slide-2 h2 {
-        position: fixed;
-        top: 70%;
-    }
-    #slide-3 .hsContent {
-        margin-left: -300px;
-    }
-    #slide-4 .hsContent {
-        margin-left: -340px;
-        position: fixed;
-    }
-    #slide-4 h2 {
-        background: none;
-    }
-
 }
 
 @media only screen and (min-width: 35em) {
@@ -364,9 +1065,9 @@ textarea {
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
