@@ -1,0 +1,303 @@
+/* ==========================================================================
+   Media Queries Maximum Width 480px
+   ========================================================================== */
+@media screen and (min-width: 320px),
+(-webkit-min-device-pixel-ratio: 2),
+(-moz-min-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2),
+(-ms-min-device-pixel-ratio: 2),
+(min-device-pixel-ratio: 2) {
+    body, html {
+        max-height: 9000px;
+        font-size: 80%;
+
+    }
+
+    h1 {
+        font-size: 275%;
+    }
+
+    #content {
+        position: absolute;
+        max-width: 50%;
+        min-height: 8000px;
+
+    }
+    #footer {
+        z-index: 100;
+        position: fixed;
+        width: 80%;
+        margin: 10% auto auto -40%;
+        left: 50%;
+        top: 75%;
+        text-align: center;
+        height: 100px;
+        max-width: 100%;
+    }
+
+    /* Parallax foreground - Logo Top */
+    #parallax-bcg5-logo {
+        z-index: 5;
+        position: fixed;
+        left: 50%; /* align left edge with center of viewport */
+        top: -20%;
+        max-width: 100%;
+
+    }
+
+    /* Parallax foreground - Logo Bottom */
+    #parallax-bcg6-logo {
+        z-index: 6;
+        position: fixed;
+        left: 50%; /* align left edge with center of viewport */
+        top: -20%;
+        max-width: 100%;
+        padding-bottom: 25px;
+    }
+
+
+
+    /* Parallax foreground - Balloons */
+    #parallax-bcg7 {
+        z-index: 7;
+        position: absolute;
+        left: 50%; /* align left edge with center of viewport */
+        top: 2000px;
+        max-width: 100%;
+
+    }
+
+    #bcg7-1-web {
+        position: relative;
+        top: 500px;
+        left: 580px;
+        max-width: 100%;
+    }
+
+    #bcg7-1-webCopy {
+        position: absolute;
+        height: 100%;
+        top: 500px;
+        left: 650px;
+        width: 520px;
+    }
+
+    #bcg7-1-design {
+        position: absolute;
+        top: 1380px;
+        left: 800px;
+        max-width: 100%;
+    }
+
+    #bcg7-1-designCopy {
+        position: absolute;
+        height: 100%;
+        top: 1550px;
+        left: 500px;
+        width: 520px;
+    }
+
+    #bcg7-1-copy {
+        position: absolute;
+        top: 2600px;
+        left: 580px;
+        max-width: 100%;
+    }
+
+    #bcg7-1-copyCopy {
+        position: absolute;
+        height: 100%;
+        top: 2600px;
+        left: 670px;
+        width: 200px;
+    }
+
+
+
+    #bcg7-1-illustration {
+        position: absolute;
+        top: 3290px;
+        left: 825px;
+        max-width: 80%;
+    }
+
+    #bcg7-1-illustrationCopy {
+        position: absolute;
+        height: 100%;
+        top: 3450px;
+        left: 500px;
+        width: 520px;
+        max-width: 90%;
+    }
+
+    #bcg7-1-photography {
+        position: absolute;
+        top: 4700px;
+        left: 560px;
+        max-width: 100%;
+    }
+
+    #bcg7-1-photographyCopy {
+        position: absolute;
+        height: 100%;
+        top: 4600px;
+        left: 670px;
+        width: 480px;
+    }
+
+}
+
+/* ==========================================================================
+   Media Queries Maximum Width 800px
+   ========================================================================== */
+@media screen and (min-width: 800px),
+(-webkit-min-device-pixel-ratio: 2),
+(-moz-min-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2),
+(-ms-min-device-pixel-ratio: 2),
+(min-device-pixel-ratio: 2) {
+    body, html {
+        min-height: 9000px;
+        font-size: 90%;
+
+    }
+
+    h1 {
+        font-size: 275%;
+    }
+
+    #content {
+        position: absolute;
+        max-width: 50%;
+        min-height: 8000px;
+
+    }
+
+
+    #footer {
+        z-index: 100;
+        position: fixed;
+        width: 80%;
+        margin: 10% auto auto -40%;
+        left: 50%;
+        top: 75%;
+        text-align: center;
+        height: 100px;
+        max-width: 100%;
+    }
+
+    /* Parallax foreground - Logo Top */
+    #parallax-bcg5-logo {
+        z-index: 5;
+        position: fixed;
+        left: 50%; /* align left edge with center of viewport */
+        top: 10%;
+        max-width: 100%;
+
+    }
+
+    /* Parallax foreground - Logo Bottom */
+    #parallax-bcg6-logo {
+        z-index: 6;
+        position: fixed;
+        left: 50%; /* align left edge with center of viewport */
+        top: -10%;
+        max-width: 100%;
+        padding-bottom: 25px;
+    }
+
+
+    /* Parallax foreground - Balloons */
+    #parallax-bcg7 {
+        z-index: 7;
+        position: absolute;
+        left: 50%; /* align left edge with center of viewport */
+        top: 2000px;
+        max-width: 100%;
+
+    }
+
+    #bcg7-1-web {
+        position: relative;
+        top: 500px;
+        left: 580px;
+        max-width: 100%;
+    }
+
+    #bcg7-1-webCopy {
+        position: absolute;
+        height: 100%;
+        top: 500px;
+        left: 720px;
+        width: 520px;
+
+    }
+
+    #bcg7-1-design {
+        position: absolute;
+        top: 1500px;
+        left: 1000px;
+        max-width: 100%;
+    }
+
+    #bcg7-1-designCopy {
+        position: absolute;
+        height: 100%;
+        top: 1550px;
+        left: 450px;
+        width: 520px;
+    }
+
+    #bcg7-1-copy {
+        position: absolute;
+        top: 2600px;
+        left: 580px;
+        max-width: 100%;
+    }
+
+    #bcg7-1-copyCopy {
+        position: absolute;
+        height: 100%;
+        top: 2600px;
+        left: 730px;
+        width: 520px;
+    }
+
+    #bcg7-1-illustration {
+        position: absolute;
+        top: 3350px;
+        left: 1000px;
+        max-width: 100%;
+    }
+
+    #bcg7-1-illustrationCopy {
+        position: absolute;
+        height: 100%;
+        top: 3400px;
+        left: 450px;
+        width: 520px;
+    }
+
+    #bcg7-1-photography {
+        position: absolute;
+        top: 4700px;
+        left: 560px;
+        max-width: 100%;
+    }
+
+    #bcg7-1-photographyCopy {
+        position: absolute;
+        height: 100%;
+        top: 4600px;
+        left: 720px;
+        width: 520px;
+    }
+}
+
+
+
+
+
+
+
+

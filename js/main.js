@@ -4,7 +4,6 @@ $(document).ready(function() {
     /* Scroll event handler */
     $(window).bind('scroll',function(e){
         parallaxScroll();
-        redrawDotNav();
     });
 
     /* Next/prev and primary nav btn click handlers */
