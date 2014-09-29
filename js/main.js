@@ -4,6 +4,7 @@ $(document).ready(function() {
     /* Scroll event handler */
     $(window).bind('scroll',function(e){
         parallaxScroll();
+        redrawDotNav();
     });
 
     /* Next/prev and primary nav btn click handlers */
@@ -67,6 +68,8 @@ function parallaxScroll(){
     $('#parallax-bcg1').css('top',(0-(scrolled*.25))+'px');
     $('#parallax-bcg2').css('top',(0-(scrolled*.5))+'px');
     $('#parallax-bcg3').css('top',(0-(scrolled*.75))+'px');
+
+
 }
 
 

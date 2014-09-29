@@ -123,7 +123,7 @@ html,body {
     font-size: 18px;
     background-color: #ffffff;
     padding:0;
-    margin: auto;
+    margin: 0;
     max-width: 1984px;
     height: 10000px;
     -webkit-font-smoothing: antialiased;
@@ -154,12 +154,10 @@ html,body {
 
 }
 
-
-
 /* =Section */
 
-#section {
-    max-width: 1180px;
+section {
+    max-width: 960px;
     width: 95%;
     height: 100%;
     margin: 45px 15px 15px 15px;
@@ -167,9 +165,9 @@ html,body {
 
 }
 
-/* =Footer */
+/* =Footer black text */
 
-#footer {
+#footerBlack {
     z-index: 100;
     position: fixed;
     width: 80%;
@@ -179,17 +177,23 @@ html,body {
     text-align: center;
     height: 100px;
     max-width: 100%;
-
 }
-/* test
-z-index: 4;
-position: fixed;
-left: 50%;
-top: 25px;
-width: 1200px;
-height: 125px;
-margin-left: -585px;
-*/
+
+/* =Footer white text */
+
+#footerWhite {
+    z-index: 100;
+    position: fixed;
+    width: 80%;
+    margin: 10% auto auto -40%;
+    left: 50%;
+    top: 95%;
+    color: rgb(255,255,255);
+    text-align: center;
+    height: 100px;
+    max-width: 100%;
+}
+
 
 .bcg {
     background-size: cover;
@@ -205,7 +209,7 @@ a:link    {
 
 /* mouse over link */
 a:hover   {
-    color: white;
+    color: dimgrey;
 }
 
 /* =========================================================================
@@ -272,7 +276,7 @@ h6 {
 p {
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
+    text-align: left;
     font-weight: normal;
     line-height: 1.5;
 }
@@ -284,7 +288,7 @@ p {
 
 
 /* ==========================================================================
-   Navigation
+   Navigation white background
    ========================================================================== */
 .nav{
     position: fixed;
@@ -307,7 +311,7 @@ p {
 .menu{
     border-radius: 2px 0 0 2px;
     box-shadow: 0px 0px 0px #000;
-    padding: 4px 0;
+    padding: 5px 0;
     position: absolute;
     top: 0;
     left: -30px;
@@ -337,7 +341,7 @@ p {
     display: block;
     text-align: left;
     font-size: 0em;
-    padding: 0;
+    padding: 2px;
     transition: padding 0.1s;
 }
 
@@ -352,7 +356,75 @@ p {
 }
 
 /* ==========================================================================
-   Parallax Scroll
+   Navigation black background
+   ========================================================================== */
+.nav2{
+    position: fixed;
+    float: right;
+    margin-top: 15px;
+    margin-left: 50px;
+    width: 128px;
+    height: 128px;
+    z-index: 999;
+}
+
+.nav2 img{
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0px 1px 1px #000;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.45s;
+}
+
+.menu2{
+    border-radius: 2px 0 0 2px;
+    box-shadow: 0px 0px 0px #000;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 95px;
+    z-index: 999;
+}
+
+.menu2 div{
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    margin: 1px 5px;
+    width: 30px;
+    height: 4px;
+    transition: height 0.45s;
+}
+
+.menu2:hover > div{
+    height: 1px;
+}
+
+.menu2:hover + img{
+    opacity:0.4;
+}
+
+.menu2 > a{
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    text-align: left;
+    font-size: 0em;
+    padding: 2px;
+    transition: padding 0.1s;
+}
+
+.menu2:hover > a{
+    font-size: 1em;
+    padding: 5px 0 0 0;
+}
+
+.menu2 > a:hover{
+    color: rgba(255, 255, 255, 1);
+    transition: color 0.1s;
+}
+
+/* ==========================================================================
+   Parallax Scroll index.html
    ========================================================================== */
 
 
@@ -691,7 +763,6 @@ p {
 
 #bcg7-1-copyCopy {
     position: absolute;
-    width: 750px;
     height: 100%;
     top: 2500px;
     left: 470px;
@@ -729,6 +800,515 @@ p {
     left: 450px;
     max-width: 100%;
 }
+
+/* ==========================================================================
+   Parallax Scroll web.html
+   ========================================================================== */
+/*  Parallax  background - black mist */
+
+#web-bcg1-1 {
+    position: absolute;
+
+}
+
+/*  Parallax  background - large flare */
+
+#web-bcg2-1 {
+    position: absolute;
+    top: 85px;
+    left: 400px;
+    max-width: 60%;
+    background-repeat: repeat-y;
+
+}
+
+#web-bcg2-2 {
+    position: absolute;
+    top: -400px;
+    left: -800px;
+    max-width: 70%;
+    background-repeat: repeat-y;
+}
+
+#web-bcg2-3 {
+    position: absolute;
+    top: 4500px;
+    left: 400px;
+    max-width: 60%;
+    background-repeat: repeat-y;
+
+}
+
+#web-bcg2-4 {
+    position: absolute;
+    top: 4900px;
+    left: -800px;
+    max-width: 70%;
+    background-repeat: repeat-y;
+}
+
+
+/* Parallax background small flare */
+
+#web-bcg3-1 {
+    position: absolute;
+    top: 500px;
+    left: -370px;
+    max-width: 70%;
+    background-repeat: repeat-y;
+}
+
+#web-bcg3-2 {
+    position: absolute;
+    top: 350px;
+    left: 400px;
+    max-width: 85%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#web-bcg3-3 {
+    position: absolute;
+    top: 6000px;
+    left: -370px;
+    max-width: 70%;
+    background-repeat: repeat-y;
+}
+
+/* Banner Headers */
+
+#web-bcg3-4 {
+    position: absolute;
+    top: 7500px;
+    left: 400px;
+    max-width: 85%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+/* Logo Intro */
+
+#bcg7-1-web01 {
+    position: absolute;
+    top: 500px;
+    width: 142%;
+    height: 550px;
+    left:-330px;
+    background-color: rgb(255,255,255);
+}
+
+.bcg7-1-web01Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 20px;
+    left: 80px;
+}
+
+.bcg7-1-web01Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 70px;
+    left: 950px;
+    max-width: 100%;
+}
+
+/* Site Map */
+
+#bcg7-1-web02 {
+    position: absolute;
+    top: 2000px;
+    width: 141%;
+    height: 550px;
+    left:-330px;
+    background-color: rgb(0,0,0);
+
+}
+#bcg7-1-web02Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 20px;
+    left: 80px;
+}
+
+#bcg7-1-web02Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 80px;
+    left: 950px;
+    max-width: 100%;
+    color: rgb(255,255,255);
+}
+
+#bcg7-1-web02Visual {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 700px;
+    left: 600px;
+
+}
+
+/* Wire Frame */
+
+#bcg7-1-web03 {
+    position: absolute;
+    top: 4000px;
+    width: 141%;
+    height: 550px;
+    left:-330px;
+    background-color: rgb(0,0,0);
+
+}
+#bcg7-1-web03Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 20px;
+    left: 80px;
+}
+
+#bcg7-1-web03Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 80px;
+    left: 950px;
+    max-width: 100%;
+    color: rgb(255,255,255);
+}
+
+
+#bcg7-1-web03Visual {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 700px;
+    left: 600px;
+}
+
+/* Ps Mockup */
+
+#bcg7-1-web04 {
+    position: absolute;
+    top: 6000px;
+    width: 141%;
+    height: 550px;
+    left:-330px;
+    background-color: rgb(0,0,0);
+
+}
+#bcg7-1-web04Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 20px;
+    left: 80px;
+}
+
+#bcg7-1-web04Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 80px;
+    left: 950px;
+    max-width: 100%;
+    color: rgb(255,255,255);
+}
+
+
+#bcg7-1-web04Visual {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 700px;
+    left: 600px;
+
+}
+
+/* Design Doc */
+
+#bcg7-1-web05 {
+    position: absolute;
+    top: 8050px;
+    width: 141%;
+    height: 550px;
+    left:-330px;
+    background-color: rgb(0,0,0);
+
+}
+#bcg7-1-web05Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 20px;
+    left: 80px;
+}
+
+#bcg7-1-web05Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 80px;
+    left: 950px;
+    max-width: 100%;
+    color: rgb(255,255,255);
+}
+
+
+#bcg7-1-web05Visual {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 700px;
+    left: 300px;
+}
+
+/* Style Guide */
+
+#bcg7-1-web06 {
+    position: absolute;
+    top: 10300px;
+    width: 141%;
+    height: 550px;
+    left:-330px;
+    background-color: rgb(0,0,0);
+
+}
+#bcg7-1-web06Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 20px;
+    left: 80px;
+}
+
+#bcg7-1-web06Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 80px;
+    left: 950px;
+    max-width: 100%;
+    color: rgb(255,255,255);
+}
+
+
+#bcg7-1-web06Visual {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 700px;
+    left: 300px;
+}
+
+/* Logo Close */
+
+#bcg7-1-web07 {
+    position: absolute;
+    top: 12500px;
+    width: 142%;
+    height: 550px;
+    left:-330px;
+    background-color: rgb(255,255,255);
+}
+
+
+/* ==========================================================================
+   Parallax Scroll design.html
+   ========================================================================== */
+/*  Parallax  background - white linen */
+
+#design-bcg1-1 {
+    position: absolute;
+
+}
+
+/*  Parallax  background - large flare */
+
+#design-bcg2-1 {
+    position: absolute;
+    top: 85px;
+    left: 400px;
+    max-width: 60%;
+    background-repeat: repeat-y;
+
+}
+
+#design-bcg2-2 {
+    position: absolute;
+    top: -400px;
+    left: -800px;
+    max-width: 70%;
+    background-repeat: repeat-y;
+}
+
+#design-bcg2-3 {
+    position: absolute;
+    top: 4500px;
+    left: 400px;
+    max-width: 60%;
+    background-repeat: repeat-y;
+
+}
+
+/* Parallax background white light */
+
+#design-bcg3-1 {
+    position: absolute;
+    top: -200px;
+    left: -370px;
+    background-repeat: repeat-y;
+}
+
+#design-bcg3-2 {
+    position: absolute;
+    top: -650px;
+    left: 400px;
+    max-width: 85%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#design-bcg3-3 {
+    position: absolute;
+    top: 3000px;
+    left: -370px;
+    max-width: 70%;
+    background-repeat: repeat-y;
+}
+
+#design-bcg3-4 {
+    position: absolute;
+    top: 2000px;
+    left: 400px;
+    max-width: 85%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#design-bcg3-5 {
+    position: absolute;
+    top: 5550px;
+    left: -370px;
+    max-width: 70%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#design-bcg3-6 {
+    position: absolute;
+    top: 5000px;
+    left: 400px;
+    max-width: 85%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+/* Design Parallax */
+
+#parallaxDesign-bcg7 {
+    z-index: 4;
+    position: fixed;
+    left: 50%; /* align left edge with center of viewport */
+    top: -300px;
+    width: 1200px;
+    height: 125px;
+    margin-left: -580px; /* move left by half element's width */
+}
+
+/* Logo Intro */
+
+#bcg7-1-design01 {
+    z-index: 4;
+    position: fixed;
+    left: 30%;
+    top: 150px;
+    width: 1200px;
+    height: 125px;
+    margin-left: -580px;
+}
+
+.bcg7-1-design01Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: -20px;
+    left: 80px;
+}
+
+.bcg7-1-design01Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 70px;
+    left: 950px;
+    max-width: 100%;
+}
+
+/* Elements of Design */
+
+#bcg7-1-design02 {
+    position: absolute;
+    top: 100px;
+    width: 200%;
+    height: 100%;
+    left:-330px;
+
+
+}
+
+#bcg7-1-design02Visual {
+    position: absolute;
+    width: 1610px;
+    height: 625px;
+    top: 300px;
+    left: 100px;
+    max-width: 200%;
+
+}
+
+/* Principles of Design */
+
+#bcg7-1-design03 {
+    position: absolute;
+    top: 1000px;
+    width: 200%;
+    height: 100%;
+    left:-330px;
+
+
+}
+
+#bcg7-1-design03Visual {
+    position: absolute;
+    width: 1610px;
+    height: 625px;
+    top: 300px;
+    left: 100px;
+    max-width: 200%;
+
+}
+
+
+/* Logo Close */
+
+#bcg7-1-design07 {
+    position: absolute;
+    top: 12500px;
+    width: 142%;
+    height: 550px;
+    left:-330px;
+
+}
+
+
+
+
+
 
 /* =========================================================================
     Slider Preview
@@ -1162,6 +1742,7 @@ img.ri-7:empty
         page-break-after: avoid;
     }
 }
+
 
 
 
