@@ -1249,62 +1249,614 @@ p {
     max-width: 100%;
 }
 
-/* Elements of Design */
+/* Element of Design */
 
 #bcg7-1-design02 {
     position: absolute;
-    top: 100px;
-    width: 200%;
-    height: 100%;
+    top: 400px;
+    width: 141%;
+    height: 550px;
     left:-330px;
 
 
+}
+#bcg7-1-design02Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 400px;
+    left: 80px;
+}
+
+#bcg7-1-design02Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 80px;
+    left: 950px;
+    max-width: 100%;
+    color: rgb(0,0,0);
 }
 
 #bcg7-1-design02Visual {
     position: absolute;
-    width: 1610px;
-    height: 625px;
-    top: 300px;
-    left: 100px;
-    max-width: 200%;
+    width: 773px;
+    top: 700px;
+    left: 600px;
 
 }
 
-/* Principles of Design */
+/* Principle of Design */
 
 #bcg7-1-design03 {
     position: absolute;
-    top: 1000px;
-    width: 200%;
-    height: 100%;
+    top: 2000px;
+    width: 141%;
+    height: 550px;
     left:-330px;
 
-
 }
+#bcg7-1-design03Logo {
+    position: absolute;
+    width: 773px;
+    top: 400px;
+    left: 80px;
+}
+
+#bcg7-1-design03Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 80px;
+    left: 950px;
+    max-width: 100%;
+    color: rgb(0,0,0);
+}
+
 
 #bcg7-1-design03Visual {
     position: absolute;
-    width: 1610px;
-    height: 625px;
-    top: 300px;
-    left: 100px;
-    max-width: 200%;
+    width: 773px;
+    height: 510px;
+    top: 700px;
+    left: 600px;
+}
+
+/* Broken Design */
+
+#bcg7-1-design04 {
+    position: absolute;
+    top: 4000px;
+    width: 141%;
+    height: 350px;
+    left: -350px;
 
 }
 
+#bcg7-1-design04Logo {
+    position: absolute;
+    width: 773px;
+    top: 100px;
+    left: 80px;
+}
 
-/* Logo Close */
+#bcg7-1-design04Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 300px;
+    left: 950px;
+    max-width: 100%;
+    color: rgb(0,0,0);
+}
+
+/* The Edge Design */
+
+#bcg7-1-design05 {
+    position: absolute;
+    top: 5500px;
+    width: 141%;
+    height: 350px;
+    left: -350px;
+
+}
+
+#bcg7-1-design05Logo {
+    position: absolute;
+    width: 773px;
+    top: 100px;
+    left: 80px;
+}
+
+#bcg7-1-design05Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 300px;
+    left: 950px;
+    max-width: 100%;
+    color: rgb(0,0,0);
+}
+
+
+/* Beyond the Clouds Design */
+
+#bcg7-1-design06 {
+    position: absolute;
+    top: 7000px;
+    width: 141%;
+    height: 350px;
+    left: -350px;
+
+}
+
+#bcg7-1-design06Logo {
+    position: absolute;
+    width: 773px;
+    top: 100px;
+    left: 80px;
+}
+
+#bcg7-1-design06Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 300px;
+    left: 950px;
+    max-width: 100%;
+    color: rgb(0,0,0);
+}
+
+
+
+
+/* Logo Closing */
 
 #bcg7-1-design07 {
     position: absolute;
-    top: 12500px;
+    top: 8500px;
     width: 142%;
     height: 550px;
     left:-330px;
 
 }
 
+/* ==========================================================================
+   Parallax Scroll copy.html
+   ========================================================================== */
+
+/*  Parallax  background - paper texture */
+
+#copy-bcg1-1 {
+    position: absolute;
+
+}
+
+/*  Parallax mid background - shadows */
+
+#copy-bcg2-1 {
+    position: absolute;
+    top: 0;
+    left: -700px;
+    background-repeat: repeat-y;
+
+}
+
+#copy-bcg2-2 {
+    position: absolute;
+    top: 2500px;
+    left: -700px;
+    background-repeat: repeat-y;
+}
+
+#copy-bcg2-3 {
+    position: absolute;
+    top: 4500px;
+    left: -700px;
+    background-repeat: repeat-y;
+
+}
+
+#copy-bcg2-4 {
+    position: absolute;
+    top: 5900px;
+    left: -700px;
+    background-repeat: repeat-y;
+}
+
+
+/* Parallax background white light */
+
+#copy-bcg3-1 {
+    position: absolute;
+    top: -400px;
+    left: -370px;
+    background-repeat: repeat-y;
+}
+
+#copy-bcg3-2 {
+    position: absolute;
+    top: -400px;
+    left: 400px;
+    max-width: 85%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#copy-bcg3-3 {
+    position: absolute;
+    top: 3000px;
+    left: -370px;
+    max-width: 70%;
+    background-repeat: repeat-y;
+}
+
+#copy-bcg3-4 {
+    position: absolute;
+    top: 2000px;
+    left: 400px;
+    max-width: 85%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#copy-bcg3-5 {
+    position: absolute;
+    top: 5550px;
+    left: -370px;
+    max-width: 70%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#copy-bcg3-6 {
+    position: absolute;
+    top: 7000px;
+    left: 400px;
+    max-width: 85%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+/* Logo Intro */
+
+#bcg7-1-copy01 {
+    z-index: 4;
+    position: fixed;
+    left: 30%;
+    top: 150px;
+    width: 1200px;
+    height: 125px;
+    margin-left: -580px;
+}
+
+.bcg7-1-copy01Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 100px;
+    left: 250px;
+}
+
+.bcg7-1-copy01Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 70px;
+    left: 950px;
+    max-width: 100%;
+}
+
+/* Reach Poster*/
+
+#bcg7-1-copy02 {
+    position: absolute;
+    top: 400px;
+    width: 141%;
+    height: 550px;
+    left:-330px;
+}
+
+#bcg7-1-copy02Visual {
+    position: absolute;
+    width: 773px;
+    top: 100px;
+    left: 400px;
+
+}
+
+/* Key Poster */
+
+#bcg7-1-copy03 {
+    position: absolute;
+    top: 2000px;
+    width: 141%;
+    height: 550px;
+    left: -330px;
+}
+
+
+#bcg7-1-copy03Visual {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 100px;
+    left: 400px;
+}
+
+/* Reflect Poster */
+
+#bcg7-1-copy04 {
+    position: absolute;
+    top: 3700px;
+    width: 141%;
+    height: 350px;
+    left: -350px;
+
+}
+
+#bcg7-1-copy04Visual {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 100px;
+    left: 400px;
+}
+
+
+
+/* Logo Closing */
+
+#bcg7-1-copy07 {
+    position: absolute;
+    top: 5300px;
+    width: 142%;
+    height: 550px;
+    left:-330px;
+
+}
+
+
+/* ==========================================================================
+   Parallax Scroll illustration.html
+   ========================================================================== */
+
+/*  Parallax  background - green background */
+
+#illus-bcg1-1 {
+    position: absolute;
+
+}
+
+/*  Parallax mid background - large water drops */
+
+#illus-bcg2-1 {
+    position: absolute;
+    top: 600px;
+    left: -600px;
+    background-repeat: repeat-y;
+
+}
+
+#illus-bcg2-2 {
+    position: absolute;
+    top: 1200px;
+    left: -300px;
+    background-repeat: repeat-y;
+}
+
+#illus-bcg2-3 {
+    position: absolute;
+    top: 4500px;
+    left: 200px;
+    background-repeat: repeat-y;
+
+}
+
+#illus-bcg2-4 {
+    position: absolute;
+    top: 5900px;
+    left: 400px;
+    background-repeat: repeat-y;
+}
+
+
+/* Parallax background cat tails */
+
+#illus-bcg3-1 {
+    position: absolute;
+    top: 360px;
+    left: -220px;
+    background-repeat: repeat-y;
+}
+
+#illus-bcg3-2 {
+    position: absolute;
+    top: -400px;
+    left: 400px;
+    max-width: 85%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#illus-bcg3-3 {
+    position: absolute;
+    top: 1000px;
+    left: -570px;
+    max-width: 70%;
+    background-repeat: repeat-y;
+}
+
+#illus-bcg3-4 {
+    position: absolute;
+    top: 2000px;
+    left: 400px;
+    max-width: 85%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#illus-bcg3-5 {
+    position: absolute;
+    top: 5550px;
+    left: -370px;
+    max-width: 70%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#illus-bcg3-6 {
+    position: absolute;
+    top: 7000px;
+    left: 400px;
+    max-width: 85%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+/* Logo Intro */
+
+#bcg7-1-illus01 {
+    z-index: 4;
+    position: fixed;
+    left: 30%;
+    top: 150px;
+    width: 1200px;
+    height: 125px;
+    margin-left: -580px;
+}
+
+.bcg7-1-illus01Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: -20px;
+    left: 250px;
+}
+
+.bcg7-1-illus01Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 70px;
+    left: 950px;
+    max-width: 100%;
+}
+
+/* Parallax foreground - Carillu and Friends */
+#parallax-bcg7 {
+    z-index: 7;
+    position: relative;
+    left: 50%; /* align left edge with center of viewport */
+    top: 2000px;
+    width: 1984px;
+    margin-left: -585px; /* move left by half element's width */
+}
+
+
+#bcg7-1-beginning {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    max-width: 100%;
+}
+
+#bcg7-1-beginningCopy {
+    position: absolute;
+    width: 750px;
+    height: 100%;
+    top: 400px;
+    left: 400px;
+    max-width: 100%;
+}
+
+#bcg7-1-froggie {
+    position: absolute;
+    top: 1500px;
+    left: 1150px;
+    max-width: 100%;
+}
+
+#bcg7-1-froggieCopy {
+    position: absolute;
+    width: 750px;
+    height: 100%;
+    top: 1400px;
+    left: 250px;
+    max-width: 100%;
+}
+
+#bcg7-1-character {
+    position: absolute;
+    top: 2600px;
+    left: 350px;
+}
+
+#bcg7-1-characterCopy {
+    position: absolute;
+    height: 100%;
+    top: 2500px;
+    left: 470px;
+    width: 650px;
+}
+
+#bcg7-1-story {
+    position: absolute;
+    top: 3600px;
+    left: 950px;
+    max-width: 100%;
+}
+
+#bcg7-1-storyCopy {
+    position: absolute;
+    width: 750px;
+    height: 100%;
+    top: 3500px;
+    left: -10px;
+    max-width: 100%;
+}
+
+#bcg7-1-print {
+    position: absolute;
+    top: 4700px;
+    left: 200px;
+    max-width: 100%;
+}
+
+#bcg7-1-printCopy {
+    position: absolute;
+    width: 650px;
+    height: 100%;
+    top: 4600px;
+    left: 450px;
+    max-width: 100%;
+}
+
+#bcg7-1-digital {
+    position: absolute;
+    top: 5800px;
+    left: 200px;
+    max-width: 100%;
+}
+
+#bcg7-1-digitalCopy {
+    position: absolute;
+    width: 650px;
+    height: 100%;
+    top: 4600px;
+    left: 450px;
+    max-width: 100%;
+}
+/* Logo Closing */
+
+#bcg7-1-illus07 {
+    position: absolute;
+    top: 6500px;
+    width: 142%;
+    height: 550px;
+    left:-330px;
+
+}
 
 
 
