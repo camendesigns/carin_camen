@@ -29,17 +29,27 @@
         })();
     </script>
 
+     <link rel="stylesheet" media="all" href="../css/main.css">
+     <link rel="stylesheet" media="screen and (max-width: 350px) and (orientation: portrait)" href="../css/responsiveMobile320.css">
+     <link rel="stylesheet" media="screen and (max-width: 480px) and (orientation: landscape)" href="../css/responsiveMobile480.css">
+     <link rel="stylesheet" media="screen and (max-width: 600px) and (orientation: portrait)" href="../css/responsiveSmTablet600.css">
+     <link rel="stylesheet" media="screen and (max-width: 800px) and (orientation: landscape)" href="../css/responsiveSmTablet800.css">
+     <link rel="stylesheet" media="screen and (max-width: 768px) and (orientation: portrait)" href="../css/responsiveTablet768.css">
+     <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)" href="../css/responsiveTablet1024.css">
+     <link rel="stylesheet" media="screen and (min-width: 1030px)" href="../css/main.css">
 
-
-    <link rel="stylesheet" media="all" href="../css/main.css">
-    <link rel="stylesheet" media="screen and (min-width: 320px)" href="../css/responsive.css">
-    <link rel="stylesheet" media="screen and (min-width: 800px)" href="../css/responsive.css">
-    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="../css/main.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script ty pe="text/javascript" src="../js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="../js/jquery_1.11.2/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="../js/jquery_1.11.2/jquery-1.11.2.min.js"></script>
+    <script src="../js/jquery_1.11.2/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="../js/jquery_1.11.2/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script type="text/javascript" src="../js/skrollr.min.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Cinzel:400,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- Google Analytics code should be placed right before </head>. -->
     <script>
@@ -65,15 +75,23 @@
                 <div class="menu">
 
                     <div></div>
-                    <a href="http://www.camendesigns.com" target="_blank">Web</a>
+                    <a href="../index.html" target="">Home</a>
                     <div></div>
-                    <a href="http://viewmyresumetoday.com" target="_blank">Copy</a>
+                    <a href="../pages/web.html" target="">Web</a>
                     <div></div>
-                    <a href="http://www.carincamenportfolio.com" target="_blank">Design</a>
+                    <a href="../pages/copy.html" target="">Copy</a>
                     <div></div>
-                    <a href="http://carillu.com" target="_blank">Illustration</a>
+                    <a href="../pages/design.html" target="">Design</a>
                     <div></div>
-                    <a href="http://cariluzen.com" target="_blank">Photography</a>
+                    <a href="../pages/illustration.html" target="">Illustration</a>
+                    <div></div>
+                    <a href="../pages/photography.html" target="">Photography</a>
+                    <div></div>
+                    <a href="https://github.com/camendesigns" target="_blank">GitHub</a>
+                    <div></div>
+                    <a href="http://www.linkedin.com/in/carincamen" target="_blank">LinkedIn</a>
+                    <div></div>
+                    <a href="http://jsfiddle.net/user/carincamen/fiddles/" target="_blank">JSFiddle</a>
                     <div></div>
                 </div>
 
@@ -90,9 +108,21 @@
 
                 <div id="bcg7-1-illus01" data-10="opacity: 1" data-1500="opacity: 0">
 
+                    <div class="slideMessageIllustration">
+                        <div class="arrow01">
+                            <img src="../img/intro/arrow01.png" alt="Arrow">
+                        </div>
+
+                        <div class="message">
+                            <p style="color: #f5f5f5; text-align: center" > Click on logo <br> to visit site</p>
+                        </div>
+
+                    </div>
+
+
                     <div class="bcg7-1-illus01Logo">
                         <a href="http://www.carillu.com/" target="_blank">
-                            <img src="../img/carillu/carillu_logo.png" alt="View My Resume Today Link"/></a>
+                            <img src="../img/carillu/carillu_logo.png" class="ri-8" alt="Carillu Link"/></a>
                     </div>
 
                     <div class="bcg7-1-illus01Copy">
@@ -100,9 +130,9 @@
                         <h3>The Adventures of Carillu</h3>
                         <br>
                         <p>Carillu and her best friend Froggie, meet new friends while learning about honest, sharing,
-                        integrity and making friends.
+                        integrity and being kind to others.
                         <hr />
-                        <p>Carillu is my latest project. It features Froggie, a blue frog that find out he has to move
+                        <p>Carillu is my latest project. It features Froggie, a blue frog that finds out he has to move
                         to the big city with his parents and is sad to have to leave his friends. He wonders what his
                         life will be like and if he will be able to make new friends.</p>
                     </div>
@@ -110,47 +140,49 @@
                 </div>
 
 
-                    <img id="bcg7-1-beginning" src="../img/intro/web_balloon.png" alt="Web Balloons" class="ri-7"
+                    <img id="bcg7-1-beginning" src="../img/carillu/froggie_friends.png" alt="Froggie and Friends" class="ri-6"
                          data-bottom-top="background-position: 50% 0"
                          data-top-bottom="background-position: 50% 0"/>
 
-                    <div id="bcg7-1-beginningCopy" data-1900="opacity: 0" data-2400="opacity: 1">
+                    <div id="bcg7-1-beginningCopy" data-1600="opacity: 0" data-1900="opacity: 1">
                         <h1 class="title">The Beginning</h1>
                         <h3>The Creation of Carillu and Froggie</h3>
                         <br>
-                        <p>Carillu and Froggie were created to help me dig into my childlike creativity to expand my design skills.
-                            As I began to create these characters, they came to life. I decided to use Carillu and Froggie
-                            to teach life skills to small children. Principles of honest, sharing and being nice to others
-                            are taught in a fun and creative way.</p>
+                        <p>Carillu and Froggie were developed when I challenged myself to explore design through a child's eyes.
+                            As I began to create these characters and their friends, they came to life. I decided to use Carillu and Froggie
+                            to teach life skills to small children. Principles of honest, sharing, kindness and acceptance
+                            of others around us are taught in a fun and creative way.</p>
                     </div>
 
-                    <img id="bcg7-1-froggie" src="../img/intro/design_balloon.png" alt="Web Balloons" class="ri-7"
+                    <img id="bcg7-1-froggie" src="../img/carillu/froggie.png" alt="Froggie" class="ri-7"
                          data-bottom-top="background-position: 50% 0"
                          data-top-bottom="background-position: 50% 0"/>
 
-                    <div id="bcg7-1-froggieCopy" data-2900="opacity: 0" data-3200="opacity: 1">
+                    <div id="bcg7-1-froggieCopy" data-2700="opacity: 0" data-3000="opacity: 1">
                         <h1 class="title">Froggie</h1>
                         <h3>Where it all Began</h3>
                         <br>
                         <p>My first character was Froggie. A young blue frog that was sad when he found out his parents
                         were moving them to the city. He didn't want to leave his friends and was worried about finding
                         new friends.</p>
-                        <hr />
+
                     </div>
 
-                    <img id="bcg7-1-character" src="../img/intro/copy_balloon.png" alt="Web Balloons" class="ri-7"
+                    <img id="bcg7-1-character" src="../img/carillu/froggie_pckg.png" alt="Froggie Toy" class="ri-6"
                          data-bottom-top="background-position: 50% 0"
                          data-top-bottom="background-position: 50% 0"/>
 
-                    <div id="bcg7-1-characterCopy"  data-3900="opacity: 0" data-4300="opacity: 1">
+                    <div id="bcg7-1-characterCopy"  data-3700="opacity: 0" data-4100="opacity: 1">
                         <h1 class="title">The Character</h1>
                         <h3>Developing 3 Dimensional</h3>
                         <br>
-                        <p>Once Froggie was developed in Illustrator, it was time to bring him to life using polymer clay.</p>
+                        <p>Once Froggie was developed in Illustrator, it was time to bring him to life. Using polymer clay a
+                        5" version of Froggie was created. Packaging for the Froggie toy was designed and developed. Finally,
+                        1.5" game pieces were then created in polymer clay.</p>
 
                     </div>
 
-                    <img id="bcg7-1-story" src="../img/intro/illustration_balloon.png" alt="Web Balloons" class="ri-7"
+                    <img id="bcg7-1-story" src="../img/carillu/froggie_book.png" alt="Froggie Book" class="ri-7"
                          data-bottom-top="background-position: 50% 0"
                          data-top-bottom="background-position: 50% 0"/>
 
@@ -158,33 +190,33 @@
                         <h1 class="title">The Story</h1>
                         <h3>Froggie's Adventure</h3>
                         <br>
-                        <p>Writing and Illustrating a children's book lead to the creation of a board game.</p>
+                        <p>Writing and illustrating a children's book continued the evolution of Froggie. The first draft,
+                        stimulated the creation of a series of stories around Froggie and his friends.</p>
                     </div>
 
-                    <img id="bcg7-1-print" src="../img/intro/photography_balloon.png" alt="Web Balloons" class="ri-7"
+                    <img id="bcg7-1-print" src="../img/carillu/froggie_game_gallery.png" alt="Froggie Game" class="ri-7"
                          data-bottom-top="background-position: 50% 0"
                          data-top-bottom="background-position: 50% 0"/>
 
-                    <div id="bcg7-1-printCopy" data-6100="opacity: 0" data-6600="opacity: 1">
+                    <div id="bcg7-1-printCopy" data-5800="opacity: 0" data-6200="opacity: 1">
                         <h1 class="title">Print Process</h1>
                         <h3>Froggie and Friends</h3>
                         <br>
-                        <p>Next I developed a board game with game pieces for children to play. I chose to develop the board
-                            game before the online version to encourage interaction with other children.</p>
+                        <p>The is a lost art of interaction with those around us due to our attention peering
+                            into a screen. Developing a board game with game pieces encourages children to play interactively with others.</p>
                     </div>
 
-                    <img id="bcg7-1-digital" src="../img/intro/photography_balloon.png" alt="Web Balloons" class="ri-7"
+                    <img id="bcg7-1-digital" src="../img/carillu/froggie_final01.png" alt="Froggie Final" class="ri-7"
                          data-bottom-top="background-position: 50% 0"
                          data-top-bottom="background-position: 50% 0"/>
 
-                    <div id="bcg7-1-digitalCopy" data-7300="opacity: 0" data-7800="opacity: 1">
+                    <div id="bcg7-1-digitalCopy" data-6900="opacity: 0" data-7400="opacity: 1">
                         <h1 class="title">The Evolution</h1>
                         <h3>Going Digital</h3>
                         <br>
-                        <p>Carillu was created when Froggie entered the Digital World. Froggie would become one of
-                        many friends of Carillu that would teach young children lifeskills.</p>
+                        <p>With the three dimensional complete, it was time to go digital. </p>
                         <hr>
-                        <p>As this project has evolved, Carillu.com was development. Future projects will
+                        <p>Carillu.com brings Froggie and his friends life lessons to a broader audience. Future projects will
                         include online games and mobile application.</p>
                     </div>
 
@@ -192,22 +224,43 @@
 
                 <div id="bcg7-1-illus07">
 
-                    <div class="bcg7-1-illus01Logo">
-                        <a href="http://www.carillu.com/" target="_blank">
-                            <img src="../img/carillu/carillu_logo.png" alt="View My Resume Today Link"/></a>
+                    <div class="slideMessageIllustration02">
+                        <div class="arrow01">
+                            <img src="../img/intro/arrow01.png" alt="Arrow">
+                        </div>
+
+                        <div class="message">
+                            <p style="color: #f5f5f5; text-align: center" > Click on logo <br> to visit site</p>
+                        </div>
+
                     </div>
 
-                    <div class="bcg7-1-illus01Copy">
+                    <div class="bcg7-1-illus07Logo">
+                            <img src="../img/carillu/carillu_logo.png" a href="http://www.carillu.com/" class="ri-7" target="_blank" alt="Carillu Link"/></a>
+                    </div>
+
+                    <div class="bcg7-1-illus07Copy">
                         <h1 class="title">Carillu</h1>
                         <h3>A New Adventure Awaits</h3>
                         <br>
                         <p>In this fast-paced world of digital media, designers and developers have to continue to push themselves
                         to stay at the top of their game.</p>
                         <hr />
-                        <p>Carillu.com provides me the resources and direction to continue to increase my skillset in illustration
+                        <p>Carillu.com provides me the resources and direction to continue to increase my skill set in illustration
                         and animation.</p>
+                        <br>
+                        <br>
+                        <h3>Scroll down. </h3>
+                        <h4>Froggie will move when you click on him. <br>
+                            Click on him again to make him stop.</h4>
 
                     </div>
+
+                </div>
+
+                <div id ="froggieArea">
+
+                <img class="froggie" src="../img/carillu/froggieMove.png" class="ri-5" alt="Froggie">
 
                 </div>
 
@@ -217,63 +270,46 @@
 
             <!-- Parallax Top background -  cat tails-->
             <div id="parallax-bcg3">
-                <img id="illus-bcg3-1" src="../img/bcg/illus_bcg03.png" alt="Light Burst"/>
-                <img id="illus-bcg3-2" src="../img/bcg/illus_bcg03.png" alt="Light Burst"/>
-                <img id="illus-bcg3-3" src="../img/bcg/illus_bcg03.png" alt="Light Burst"/>
-                <img id="illus-bcg3-4" src="../img/bcg/illus_bcg03.png" alt="Light Burst"/>
-                <img id="illus-bcg3-5" src="../img/bcg/illus_bcg03.png" alt="Light Burst"/>
-                <img id="illus-bcg3-6" src="../img/bcg/illus_bcg03.png" alt="Light Burst"/>
+                <img id="illus-bcg3-1" src="../img/bcg/illus_bcg03.png" class="ri-10" alt="Cat Tails"/>
+                <img id="illus-bcg3-2" src="../img/bcg/illus_bcg03.png" class="ri-10"alt="Light Burst"/>
+                <img id="illus-bcg3-3" src="../img/bcg/illus_bcg03.png" class="ri-10"alt="Light Burst"/>
+                <img id="illus-bcg3-4" src="../img/bcg/illus_bcg03.png" class="ri-10"alt="Light Burst"/>
+                <img id="illus-bcg3-5" src="../img/bcg/illus_bcg03.png" class="ri-10"alt="Light Burst"/>
+                <img id="illus-bcg3-6" src="../img/bcg/illus_bcg03.png" class="ri-10"alt="Light Burst"/>
 
             </div>
 
             <!-- Parallax  Mid background - blue drops-->
             <div id="parallax-bcg2">
-                <img id="illus-bcg2-1" src="../img/bcg/illus_bcg02.png" alt="Blue Shadows"/>
-                <img id="illus-bcg2-2" src="../img/bcg/illus_bcg02.png" alt="Blue Shadows"/>
-                <img id="illus-bcg2-3" src="../img/bcg/illus_bcg02.png" alt="Blue Shadows"/>
-                <img id="illus-bcg2-4" src="../img/bcg/illus_bcg02.png" alt="Blue Shadows"/>
+                <img id="illus-bcg2-1" src="../img/bcg/illus_bcg02.png" class="ri-10" alt="Blue Drops"/>
+                <img id="illus-bcg2-2" src="../img/bcg/illus_bcg02.png" class="ri-9"alt="Blue Drops"/>
+                <img id="illus-bcg2-3" src="../img/bcg/illus_bcg02.png" class="ri-10"alt="Blue Drops"/>
+
             </div>
 
 
             <!-- Parallax  foundation - paper texture-->
             <div id="parallax-bcg1">
-                <img id="illus-bcg1-1" src="../img/bcg/illus_bcg01.jpg" alt="sky"/>
+                <img id="illus-bcg1-1" src="../img/bcg/illus_bcg01.jpg" alt="Paper Texture"/>
             </div>
 
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+            <script type="text/javascript">
+                var s = skrollr.init({
+                    forceHeight: false
+                });
+            </script>
 
-        <script type="text/javascript" src="../js/skrollr.min.js"></script>
-        <script type="text/javascript">
-            var s = skrollr.init({
-                forceHeight: false
-            });
-        </script>
-
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
-
-        <script type="text/javascript">
-            var s = skrollr.init({
-                render: function(data) {
-                    //Log the current scroll position.
-                    //console.log(data.curTop);
-                    $('#offset').text(data.curTop);
-                }
-            });
-        </script>
-
-        <script type="text/javascript">
-            $('body').flowtype({
-                minimum   : 500,
-                maximum   : 1200,
-                minFont   : 12,
-                maxFont   : 40,
-                fontRatio : 30
-            });
-        </script>
+            <script type="text/javascript">
+                var s = skrollr.init({
+                    render: function(data) {
+                        //Log the current scroll position.
+                        //console.log(data.curTop);
+                        $('#offset').text(data.curTop);
+                    }
+                });
+            </script>
 
     </body>
 

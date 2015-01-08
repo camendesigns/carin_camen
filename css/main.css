@@ -110,25 +110,23 @@ textarea {
 /* =========================================================================
     Page structure
    ========================================================================== */
-
-@media screen and (min-width: 1100px),
-(-webkit-min-device-pixel-ratio: 2),
-(-moz-min-device-pixel-ratio: 2),
-(-o-min-device-pixel-ratio: 2),
-(-ms-min-device-pixel-ratio: 2),
-(min-device-pixel-ratio: 2) {
+@media screen and (min-width: 1030px),
+(-webkit-min-device-pixel-ratio: 1.0, 1.3, 1.4, 1.5, 2.0, 3.0),
+(-moz-min-device-pixel-ratio: 1.0, 1.3, 1.4, 1.5, 2.0, 3.0),
+(-o-min-device-pixel-ratio: 1.0, 1.3, 1.4, 1.5, 2.0, 3.0),
+(-ms-min-device-pixel-ratio: 1.0, 1.3, 1.4, 1.5, 2.0, 3.0),
+(min-device-pixel-ratio: 1.0, 1.3, 1.4, 1.5, 2.0, 3.0) {
 
 }
 html,body {
-    font-size: 18px;
+    font-size: 16px;
     background-color: #ffffff;
     padding:0;
     margin: 0;
-    max-width: 1984px;
-    height: 10000px;
+    max-width: 100%;
+    height: 100%;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-
 }
 
 
@@ -148,8 +146,8 @@ html,body {
     position: relative;
     margin: 0 auto;
     padding-bottom: 100px;
-    max-width: 1290px;
-    height: 10000px;
+    max-width: 100%;
+    height: auto;
     width: 100%;
 
 }
@@ -165,19 +163,7 @@ section {
 
 }
 
-/* =Footer black text */
 
-#footerBlack {
-    z-index: 100;
-    position: fixed;
-    width: 80%;
-    margin: 10% auto auto -40%;
-    left: 50%;
-    top: 75%;
-    text-align: center;
-    height: 100px;
-    max-width: 100%;
-}
 
 /* =Footer white text */
 
@@ -196,9 +182,8 @@ section {
 
 
 .bcg {
-    background-size: cover;
-    height: 100%;
     width: 100%;
+    height: auto;
 }
 
 /* unvisited link */
@@ -213,24 +198,25 @@ a:hover   {
 }
 
 /* =========================================================================
-    Font structure
+    Font structure black
 
    ========================================================================== */
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
 h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-family: 'Cinzel', serif;
     font-weight: bold;
-    line-height: 0.5%;
+    line-height: 1;
     text-align: center;
+
 
 }
 
 
 h2 {
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Cinzel', serif;
     text-align: center;
     font-weight: normal;
@@ -238,7 +224,7 @@ h2 {
 
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Cinzel', serif;
     text-align: center;
     font-weight: bolder;
@@ -247,7 +233,7 @@ h3 {
 
 
 h4 {
-    font-size: 1em;
+    font-size: .75em;
     font-family: 'Cinzel', serif;
     text-align: center;
     font-weight: bolder;
@@ -257,7 +243,7 @@ h4 {
 
 
 h5 {
-    font-size: .75em;
+    font-size: .5em;
     font-family: 'Cinzel', serif;
     text-align: center;
     font-weight: bolder;
@@ -265,7 +251,7 @@ h5 {
 
 
 h6 {
-    font-size: .50em;
+    font-size: .5em;
     font-family: 'Cinzel', serif;
     text-align: center;
     font-weight: bolder;
@@ -285,6 +271,8 @@ p {
     line-height: 1;
 
 }
+
+
 
 
 /* ==========================================================================
@@ -424,14 +412,544 @@ p {
 }
 
 /* ==========================================================================
-   Parallax Scroll index.html
+   Resize Images
    ========================================================================== */
 
+.resizable {
+    width: 500px;
+    height: 500px;
+}
+
+
+img.ri-1
+{
+    position: absolute;
+    max-width: 10%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-1:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-2
+{
+    position: absolute;
+    max-width: 20%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-2:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-3
+{
+    position: absolute;
+    max-width: 30%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-3:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-4
+{
+    position: absolute;
+    max-width: 40%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-4:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-5
+{
+    position: absolute;
+    max-width: 50%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-5:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-6
+{
+    position: absolute;
+    max-width: 60%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-6:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-7
+{
+    position: absolute;
+    max-width: 70%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-7:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-8
+{
+    position: absolute;
+    max-width: 80%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-8:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-9
+{
+    position: absolute;
+    max-width: 90%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-9:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img.ri-10
+{
+    position: absolute;
+    max-width: 100%;
+    top: 10%;
+    left: 10%;
+}
+
+img.ri-10:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/* ==========================================================================
+   Gallery
+   ==========================================================================*/
+
+.preview{
+    position: relative;
+    width: 630px;
+    height: 350px;
+    top: 0;
+    left: 0;
+    border-color: black;
+}
+
+.gallery01 {
+    position: relative;
+    width: 620px;
+    height: 215px;
+    top: 30px;
+    left: 50px;
+    background-color: rgb(0,0,0);
+}
+
+.gallery02{
+    position: relative;
+    width: 620px;
+    height: 215px;
+    top: 30px;
+    left: 50px;
+    background-color: rgb(0,0,0);
+}
+
+.gallery03{
+    position: relative;
+    width: 620px;
+    height: 215px;
+    top: 30px;
+    left: 50px;
+    background-color: rgb(0,0,0);
+}
+
+.slide01{
+    position: relative;
+    white-space: nowrap;
+    width: 200px;
+    height: 200px;
+    top: 8px;
+    left: 5px;
+
+}
+
+.slide02{
+    position: relative;
+    white-space: nowrap;
+    width: 200px;
+    height: 200px;
+    top: 8px;
+    left: 5px;
+
+}
+
+.slide03{
+    position: relative;
+    white-space: nowrap;
+    width: 200px;
+    height: 200px;
+    top: 8px;
+    left: 5px;
+
+}
+
+.slide04{
+    position: relative;
+    width: 610px;
+    height: 205px;
+    top: 5px;
+    left: 5px;
+    background-color: rgb(0,0,0);
+}
+
+.arrow{
+    position: relative;
+    width:20px;
+    height: 20px;
+    top: 15px;
+    left: 345px;
+}
+
+.dotNav{
+    position: relative;
+    width: 620px;
+    height: 30px;
+    top:20px;
+    left: 0;
+
+}
+
+
+.smDot01{
+    position: absolute;
+    display: inline-block;
+    top: 15px;
+    Left: 286px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border: solid;
+    border-color: slategrey;
+    border-radius: 50%;
+    background-color: black;
+    opacity: .50;
+}
+
+.smDot02{
+    position: absolute;
+    display: inline-block;
+    top: 15px;
+    Left: 316px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border: solid;
+    border-color: slategrey;
+    border-radius: 50%;
+    background-color: black;
+    opacity: .50;
+}
+
+.smDot03{
+    position: absolute;
+    display: inline-block;
+    top: 15px;
+    Left: 348px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border: solid;
+    border-color: slategrey;
+    border-radius: 50%;
+    background-color: black;
+    opacity: .50;
+}
+
+
+/* ==========================================================================
+   Flame Features
+   ========================================================================== */
+#flame01 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 700px;
+    left: 90px;
+}
+
+#flame02 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 1588px;
+    left: 1148px;
+}
+
+#flame03 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 2723px;
+    left: 355px;
+}
+
+#flame04 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 3727px;
+    left: 950px;
+}
+
+#flame05 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 4825px;
+    left: 197px;
+}
+
+/* ==========================================================================
+   Slide Out Message
+   ==========================================================================*/
+.slideMessageWeb {
+    position: absolute;
+    width: 225px;
+    height: 80px;
+    top: 50%;
+    left: -2%;
+    z-index: 9999;
+}
+.slideMessageWeb02 {
+    position: absolute;
+    width: 225px;
+    height: 80px;
+    top: 50%;
+    left: -2%;
+    z-index: 9999;
+}
+
+.slideMessageCopy {
+    position: absolute;
+    width: 225px;
+    height: 80px;
+    top: 250%;
+    left: -3%;
+    z-index: 9999;
+}
+
+.slideMessageCopy02 {
+    position: absolute;
+    width: 225px;
+    height: 80px;
+    top: 250%;
+    left: -5%;
+    z-index: 9999;
+}
+
+.slideMessageDesign {
+    position: absolute;
+    width: 225px;
+    height: 80px;
+    top: 150%;
+    left: -9.5%;
+    z-index: 9999;
+}
+
+.slideMessageDesign02 {
+    position: absolute;
+    width: 225px;
+    height: 80px;
+    top: 25%;
+    left: -4%;
+    z-index: 9999;
+}
+
+.slideMessageIllustration {
+    position: absolute;
+    width: 225px;
+    height: 80px;
+    top: 150%;
+    left: -9.5%;
+    z-index: 9999;
+}
+
+.slideMessageIllustration02 {
+    position: absolute;
+    width: 225px;
+    height: 80px;
+    top: 25%;
+    left: -4%;
+    z-index: 9999;
+}
+
+.slideMessagePhotography {
+    position: absolute;
+    width: 225px;
+    height: 80px;
+    top: 40%;
+    left: -8%;
+    z-index: 9999;
+}
+
+.slideMessagePhotography02 {
+    position: absolute;
+    width: 225px;
+    height: 80px;
+    top: 38%;
+    left: -1%;
+    z-index: 9999;
+}
+.message {
+    position: relative;
+    width: 225px;
+    height: 70px;
+    top: -25%;
+    left: -1%;
+    background-color: rgb(0,0,0);
+}
+
+.message p{
+    position: relative;
+    top: 10%;
+    left:9%;
+}
+
+.arrow01{
+    position: relative;
+    width: 11px;
+    height: 24px;
+    top: 35%;
+    left: 92%;
+    z-index: 9999;
+}
+
+
+.part {
+    width: 10px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin:50% 100%;
+    -ms-transform-origin:50% 100%; /* IE 9 */
+    -webkit-transform-origin:50% 100%; /* Chrome, Safari, Opera */
+}
+.p1 {background-color: #ece4a7;}
+.p2 {background-color: #b494b7; left: 20px;}
+.p3 {background-color: #9ebf89; left: 40px}
+.p4 {background-color: #5f8ca6; left: 60px}
+
+
+#lineWave p {
+    position: absolute;
+    bottom: -60px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/* =====================================================================================================================
+   Parallax Scroll index.html
+   ========================================================================== */
 
 #parallax {
     z-index: 4;
     position: absolute;
-    max-width: 1290px;
+    width: 100%
     left: 70px;
     padding: 0 10px;
     margin: 0 auto;
@@ -444,14 +962,17 @@ p {
 #parallax-bcg1 {
     z-index: 1;
     position: fixed;
-    margin-left: -300px;
+    left: 0;
     top: 0;
-    width: 2000px;
-
-
+    width: 100%;
+    background-size: cover;
+    height: auto;
 }
+
 #bcg1-1 {
     position: absolute;
+    width: 100%;
+    background-size: cover
 
 }
 
@@ -459,15 +980,16 @@ p {
 #parallax-bcg2 {
     z-index: 2;
     position: fixed;
-    left: 70%; /* align left edge with center of viewport */
+    left: 0;
     top: 0;
-    width: 1200px;
-    margin-left: -600px; /* move left by half element's width */
+    width: 100%;
+    background-size: cover;
+
 }
 #bcg2-1 {
     position: absolute;
-    top: 85px;
-    left: 70px;
+    width: 100%;
+    background-size: cover;
 }
 #bcg2-2 {
     position: absolute;
@@ -476,47 +998,47 @@ p {
 }
 #bcg2-3 {
     position: absolute;
-    top: 900px;
+    top: 1200px;
     left: -220px;
 }
 #bcg2-4 {
     position: absolute;
-    top: 1220px;
+    top: 1820px;
     left: 950px;
 }
 
 #bcg2-5 {
     position: absolute;
-    top: 1600px;
+    top: 2100px;
     left: -270px;
 }
 
 #bcg2-6 {
     position: absolute;
-    top: 1900px;
+    top: 2600px;
     left: 695px;
 }
 
 #bcg2-7 {
     position: absolute;
-    top: 2100px;
+    top: 3000px;
     left: 950px;
 }
 #bcg2-8 {
     position: absolute;
-    top: 2440px;
+    top: 3440px;
     left: -270px;
 }
 
 #bcg2-9 {
     position: absolute;
-    top: 2800px;
+    top: 3800px;
     left: 650px;
 }
 
 #bcg2-10 {
     position: absolute;
-    top: 3200px;
+    top: 4200px;
     left: -270px;
 }
 
@@ -547,13 +1069,14 @@ p {
     left: -270px;
 }
 
+
 /* Parallax mid ground - small clouds */
 #parallax-bcg3 {
     z-index: 3;
     position: fixed;
     left: 50%; /* align left edge with center of viewport */
     top: 0;
-    width: 1200px;
+    width: 100%;
     margin-left: -600px; /* move left by half element's width */
 
 }
@@ -637,6 +1160,33 @@ p {
     top: 5180px;
     left: 890px;
 }
+#bcg3-16 {
+    position: absolute;
+    top: 5485px;
+    left: 70px;
+}
+#bcg3-17 {
+    position: absolute;
+    top: 6440px;
+    left: 695px;
+}
+#bcg3-18 {
+    position: absolute;
+    top: 6900px;
+    left: -220px;
+}
+#bcg3-19 {
+    position: absolute;
+    top: 8220px;
+    left: 950px;
+}
+
+#bcg3-20 {
+    position: absolute;
+    top: 9600px;
+    left: -270px;
+}
+
 
 
 /* Parallax foreground - Copy */
@@ -644,63 +1194,37 @@ p {
     z-index: 4;
     position: fixed;
     left: 50%; /* align left edge with center of viewport */
-    top: 25px;
+    top: 380px;
     width: 1200px;
     height: 125px;
     margin-left: -580px; /* move left by half element's width */
 
 }
 
-#bcg4-1 {
-    position: absolute;
-    top: 0;
-    left: 150px;
-    max-width: 100%;
-}
-#bcg4-2 {
-    position: absolute;
-    top: 812px;
-    left: 321px;
-    max-width: 100%;
-}
-#bcg4-3 {
-    position: absolute;
-    top: 1628px;
-    left: 403px;
-    max-width: 100%;
-}
-#bcg4-4 {
-    position: absolute;
-    top: 2700px;
-    left: -85px;
-    max-width: 100%;
-}
-
 /* Parallax foreground - Logo Top */
 #parallax-bcg5-logo {
     z-index: 5;
-    position: fixed;
-    left: 50%; /* align left edge with center of viewport */
-    top: 60px;
-    width: 1200px;
-    margin-left: -540px; /* move left by half element's width */
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    width: 100%;
+
 }
 
 #bcg5-1 {
     position: absolute;
-    top: 415px;
+    top: 1215px;
     left: 550px;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 /* Parallax foreground - Logo Bottom */
 #parallax-bcg6-logo {
     z-index: 6;
-    position: fixed;
-    left: 50%; /* align left edge with center of viewport */
-    top: -10px;
+    position: absolute;
+    left: 50px;
+    top: 7200px;
     width: 1200px;
-    margin-left: -540px; /* move left by half element's width */
     padding-bottom: 25px;
 }
 
@@ -736,7 +1260,6 @@ p {
     height: 100%;
     top: 400px;
     left: 400px;
-    max-width: 100%;
 }
 
 #bcg7-1-design {
@@ -752,7 +1275,6 @@ p {
     height: 100%;
     top: 1400px;
     left: 250px;
-    max-width: 100%;
 }
 
 #bcg7-1-copy {
@@ -763,10 +1285,10 @@ p {
 
 #bcg7-1-copyCopy {
     position: absolute;
+    width: 750px;
     height: 100%;
     top: 2500px;
     left: 470px;
-    width: 650px;
 }
 
 #bcg7-1-illustration {
@@ -794,20 +1316,54 @@ p {
 
 #bcg7-1-photographyCopy {
     position: absolute;
-    width: 650px;
+    width: 750px;
     height: 100%;
     top: 4600px;
     left: 450px;
     max-width: 100%;
 }
 
-/* ==========================================================================
+.about {
+    position: absolute;
+    width: 1200px;
+    height: 50px;
+    top: 5800px;
+    left: 40px;
+}
+
+.socialMedia {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 55px;
+    top: 80px;
+    left: 37%;
+
+}
+
+/* =Footer black text */
+
+#footerBlack {
+    z-index: 100;
+    position: relative;
+    width: 80%;
+    top: 100px;
+    margin-top: -6%;
+    left: -150px;
+    margin-left: -14%;
+    text-align: center;
+    height: 100px;
+    max-width: 100%;
+}
+
+/* =====================================================================================================================
    Parallax Scroll web.html
    ========================================================================== */
 /*  Parallax  background - black mist */
 
 #web-bcg1-1 {
     position: absolute;
+    width:150%;
 
 }
 
@@ -875,6 +1431,39 @@ p {
     background-repeat: repeat-y;
 }
 
+/* Message Board */
+
+.messageBoard01 {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    margin-left: -155px;
+    text-align: center;
+    font-size: 200%;
+    letter-spacing: .2em;
+}
+
+.messageBoard02 {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    margin-left: -140px;
+    text-align: center;
+    font-size: 200%;
+    letter-spacing: .2em;
+}
+
+.messageBoard03 {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    margin-left: -58px;
+    text-align: center;
+    font-size: 200%;
+    letter-spacing: .2em;
+}
+
+
 /* Banner Headers */
 
 #web-bcg3-4 {
@@ -889,19 +1478,21 @@ p {
 /* Logo Intro */
 
 #bcg7-1-web01 {
+    z-index: 4;
     position: absolute;
-    top: 500px;
-    width: 142%;
-    height: 550px;
-    left:-330px;
-    background-color: rgb(255,255,255);
+    left: -400px;
+    top: 100px;
+    width: 2200px;
+    height: 750px;
+    background-image: url(../img/assets/angle_bcg_l.png);
+    background-repeat: no-repeat;
 }
 
 .bcg7-1-web01Logo {
     position: absolute;
     width: 773px;
     height: 510px;
-    top: 20px;
+    top: 200px;
     left: 80px;
 }
 
@@ -909,7 +1500,7 @@ p {
     position: absolute;
     width: 700px;
     height: 100%;
-    top: 70px;
+    top: 260px;
     left: 950px;
     max-width: 100%;
 }
@@ -919,17 +1510,19 @@ p {
 #bcg7-1-web02 {
     position: absolute;
     top: 2000px;
-    width: 141%;
-    height: 550px;
-    left:-330px;
-    background-color: rgb(0,0,0);
+    width: 2200px;
+    height: 750px;
+    left:-400px;
+    background-image: url(../img/assets/angle_bcg_r.png);
+    opacity: .80;
 
 }
+
 #bcg7-1-web02Logo {
     position: absolute;
     width: 773px;
     height: 510px;
-    top: 20px;
+    top: 260px;
     left: 80px;
 }
 
@@ -937,18 +1530,18 @@ p {
     position: absolute;
     width: 700px;
     height: 100%;
-    top: 80px;
+    top: 280px;
     left: 950px;
     max-width: 100%;
-    color: rgb(255,255,255);
+    color: rgb(0,0,0);
 }
 
 #bcg7-1-web02Visual {
     position: absolute;
     width: 773px;
     height: 510px;
-    top: 700px;
-    left: 600px;
+    top: 900px;
+    left: 680px;
 
 }
 
@@ -957,17 +1550,18 @@ p {
 #bcg7-1-web03 {
     position: absolute;
     top: 4000px;
-    width: 141%;
-    height: 550px;
-    left:-330px;
-    background-color: rgb(0,0,0);
+    width: 2200px;
+    height: 750px;
+    left:-400px;
+    background-image: url(../img/assets/angle_bcg_l.png);
+    opacity: .80;
 
 }
 #bcg7-1-web03Logo {
     position: absolute;
     width: 773px;
     height: 510px;
-    top: 20px;
+    top: 200px;
     left: 80px;
 }
 
@@ -975,10 +1569,10 @@ p {
     position: absolute;
     width: 700px;
     height: 100%;
-    top: 80px;
+    top: 280px;
     left: 950px;
     max-width: 100%;
-    color: rgb(255,255,255);
+    color: rgb(0,0,0);
 }
 
 
@@ -986,8 +1580,8 @@ p {
     position: absolute;
     width: 773px;
     height: 510px;
-    top: 700px;
-    left: 600px;
+    top: 900px;
+    left: 680px;
 }
 
 /* Ps Mockup */
@@ -995,17 +1589,18 @@ p {
 #bcg7-1-web04 {
     position: absolute;
     top: 6000px;
-    width: 141%;
-    height: 550px;
-    left:-330px;
-    background-color: rgb(0,0,0);
+    width: 2200px;
+    height: 750px;
+    left:-400px;
+    background-image: url(../img/assets/angle_bcg_r.png);
+    opacity: .80;
 
 }
 #bcg7-1-web04Logo {
     position: absolute;
     width: 773px;
     height: 510px;
-    top: 20px;
+    top: 280px;
     left: 80px;
 }
 
@@ -1013,10 +1608,10 @@ p {
     position: absolute;
     width: 700px;
     height: 100%;
-    top: 80px;
+    top: 280px;
     left: 950px;
     max-width: 100%;
-    color: rgb(255,255,255);
+    color: rgb(0,0,0);
 }
 
 
@@ -1024,8 +1619,8 @@ p {
     position: absolute;
     width: 773px;
     height: 510px;
-    top: 700px;
-    left: 600px;
+    top: 900px;
+    left: 680px;
 
 }
 
@@ -1034,17 +1629,18 @@ p {
 #bcg7-1-web05 {
     position: absolute;
     top: 8050px;
-    width: 141%;
-    height: 550px;
-    left:-330px;
-    background-color: rgb(0,0,0);
+    width: 2200px;
+    height: 750px;
+    left:-400px;
+    background-image: url(../img/assets/angle_bcg_l.png);
+    opacity: .80;
 
 }
 #bcg7-1-web05Logo {
     position: absolute;
     width: 773px;
     height: 510px;
-    top: 20px;
+    top: 200px;
     left: 80px;
 }
 
@@ -1052,10 +1648,10 @@ p {
     position: absolute;
     width: 700px;
     height: 100%;
-    top: 80px;
+    top: 280px;
     left: 950px;
     max-width: 100%;
-    color: rgb(255,255,255);
+    color: rgb(0,0,0);
 }
 
 
@@ -1063,8 +1659,8 @@ p {
     position: absolute;
     width: 773px;
     height: 510px;
-    top: 700px;
-    left: 300px;
+    top: 900px;
+    left: 680px;
 }
 
 /* Style Guide */
@@ -1072,17 +1668,18 @@ p {
 #bcg7-1-web06 {
     position: absolute;
     top: 10300px;
-    width: 141%;
-    height: 550px;
-    left:-330px;
-    background-color: rgb(0,0,0);
+    width: 2200px;
+    height: 750px;
+    left:-400px;
+    background-image: url(../img/assets/angle_bcg_r.png);
+    opacity: .80;
 
 }
 #bcg7-1-web06Logo {
     position: absolute;
     width: 773px;
     height: 510px;
-    top: 20px;
+    top: 250px;
     left: 80px;
 }
 
@@ -1090,10 +1687,10 @@ p {
     position: absolute;
     width: 700px;
     height: 100%;
-    top: 80px;
+    top: 280px;
     left: 950px;
     max-width: 100%;
-    color: rgb(255,255,255);
+    color: rgb(0,0,0);
 }
 
 
@@ -1101,8 +1698,8 @@ p {
     position: absolute;
     width: 773px;
     height: 510px;
-    top: 700px;
-    left: 300px;
+    top: 900px;
+    left: 680px;
 }
 
 /* Logo Close */
@@ -1110,20 +1707,221 @@ p {
 #bcg7-1-web07 {
     position: absolute;
     top: 12500px;
-    width: 142%;
-    height: 550px;
-    left:-330px;
-    background-color: rgb(255,255,255);
+    width: 2200px;
+    height: 750px;
+    left:-400px;
+    background-image: url(../img/assets/angle_bcg_l.png);
 }
 
 
-/* ==========================================================================
+/* =====================================================================================================================
+   Parallax Scroll copy.html
+   ========================================================================== */
+
+/*  Parallax  background - paper texture */
+
+#copy-bcg1-1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 50%;
+
+}
+
+/*  Parallax mid background - shadows */
+
+#copy-bcg2-1 {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 100%;
+    background-repeat: repeat-y;
+
+}
+
+#copy-bcg2-2 {
+    position: absolute;
+    top: 2500px;
+    left: 30%;
+    width: 100%;
+    background-repeat: repeat-y;
+}
+
+#copy-bcg2-3 {
+    position: absolute;
+    top: 4500px;
+    left: 30%;
+    width: 100%;
+    background-repeat: repeat-y;
+
+}
+
+#copy-bcg2-4 {
+    position: absolute;
+    top: 5900px;
+    left: 30%;
+    width: 100%;
+    background-repeat: repeat-y;
+}
+
+
+/* Parallax background white light */
+
+#copy-bcg3-1 {
+    position: absolute;
+    top: -500px;
+    left: 50%;
+    width: 100%;
+    background-repeat: repeat-y;
+}
+
+#copy-bcg3-2 {
+    position: absolute;
+    top: -500px;
+    left: 30%;
+    width: 100%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#copy-bcg3-3 {
+    position: absolute;
+    top: 3000px;
+    left:30%;
+    width: 100%;
+    background-repeat: repeat-y;
+}
+
+#copy-bcg3-4 {
+    position: absolute;
+    top: 2000px;
+    left: 30%;
+    width: 100%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#copy-bcg3-5 {
+    position: absolute;
+    top: 5550px;
+    left: 30%;
+    width: 100%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+#copy-bcg3-6 {
+    position: absolute;
+    top: 7000px;
+    left: 30%;
+    width: 100%;
+    opacity: 0.8;
+    background-repeat: repeat-y;
+}
+
+/* Logo Intro */
+
+#bcg7-1-copy01 {
+    z-index: 4;
+    position: fixed;
+    left: 25%; /* align left edge with center of viewport */
+    top: 5%;
+    width: 1200px;
+    height: 125px;
+    margin-left: -580px; /* move left by half element's width */
+}
+
+.bcg7-1-copy01Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 120px;
+    left: 150px;
+}
+
+.bcg7-1-copy01Copy {
+    position: absolute;
+    width: 800px;
+    height: 100%;
+    top: 70px;
+    left: 950px;
+    max-width: 100%;
+}
+
+/* Reflection Poster*/
+
+#motivational01 {
+    position: absolute;
+    top: 300px;
+    height: 550px;
+    width: 550px;
+    left: 1%;
+}
+
+
+/* Love, Smiles, Motivation Poster */
+
+#motivational02{
+    position: absolute;
+    top: 2000px;
+    height: 500px;
+    width: 500px;
+    left: 1%;
+}
+
+
+/* Key Poster */
+
+#motivational03 {
+    position: absolute;
+    top: 3600px;
+    height: 500px;
+    width: 500px;
+    left: 1%;
+}
+
+/* Grafitti Poster */
+
+#motivational04 {
+    position: absolute;
+    top: 5200px;
+    height: 500px;
+    width: 500px;
+    left: 1%;
+}
+
+/* Reflection Poster */
+
+#motivational05 {
+    position: absolute;
+    top: 6800px;
+    height: 500px;
+    width: 500px;
+    left: 1%;
+}
+
+
+/* Logo Closing */
+
+#bcg7-1-copy07 {
+    position: absolute;
+    top: 8000px;
+    left: 200px;
+    width: 1200px;
+    height: 125px;
+    margin-left: -580px;
+}
+
+
+
+/* =====================================================================================================================
    Parallax Scroll design.html
    ========================================================================== */
 /*  Parallax  background - white linen */
 
 #design-bcg1-1 {
     position: absolute;
+    width: 150%;
 
 }
 
@@ -1133,7 +1931,7 @@ p {
     position: absolute;
     top: 85px;
     left: 400px;
-    max-width: 60%;
+    width: 150%;
     background-repeat: repeat-y;
 
 }
@@ -1142,15 +1940,15 @@ p {
     position: absolute;
     top: -400px;
     left: -800px;
-    max-width: 70%;
+    width: 150%;
     background-repeat: repeat-y;
 }
 
 #design-bcg2-3 {
     position: absolute;
     top: 4500px;
-    left: 400px;
-    max-width: 60%;
+    left: -400px;
+    width: 150%;
     background-repeat: repeat-y;
 
 }
@@ -1160,15 +1958,16 @@ p {
 #design-bcg3-1 {
     position: absolute;
     top: -200px;
-    left: -370px;
+    left: -500px;
+    width: 150%;
     background-repeat: repeat-y;
 }
 
 #design-bcg3-2 {
     position: absolute;
     top: -650px;
-    left: 400px;
-    max-width: 85%;
+    left: -500px;
+    width: 150%;
     opacity: 0.8;
     background-repeat: repeat-y;
 }
@@ -1176,16 +1975,16 @@ p {
 #design-bcg3-3 {
     position: absolute;
     top: 3000px;
-    left: -370px;
-    max-width: 70%;
+    left: -500px;
+    width: 150%;
     background-repeat: repeat-y;
 }
 
 #design-bcg3-4 {
     position: absolute;
     top: 2000px;
-    left: 400px;
-    max-width: 85%;
+    left: -500px;
+    width: 150%;
     opacity: 0.8;
     background-repeat: repeat-y;
 }
@@ -1193,8 +1992,8 @@ p {
 #design-bcg3-5 {
     position: absolute;
     top: 5550px;
-    left: -370px;
-    max-width: 70%;
+    left: -500px;
+    width: 150%;
     opacity: 0.8;
     background-repeat: repeat-y;
 }
@@ -1202,8 +2001,8 @@ p {
 #design-bcg3-6 {
     position: absolute;
     top: 5000px;
-    left: 400px;
-    max-width: 85%;
+    left: -500px;
+    width: 150%;
     opacity: 0.8;
     background-repeat: repeat-y;
 }
@@ -1247,6 +2046,29 @@ p {
     top: 70px;
     left: 950px;
     max-width: 100%;
+}
+
+/* =========================================================================
+   Effects
+   ========================================================================= */
+/*principles of design "line" feature */
+
+.linesContainer {
+    position: relative;
+    width: 260px;
+    height: 630px;
+    left: 700px;
+}
+
+
+/* principles of design "movment" feature */
+#movement {
+    position: relative;
+    height: 113px;
+    width: 160px;
+    top: 280px;
+    left: 130px;
+
 }
 
 /* Element of Design */
@@ -1299,7 +2121,7 @@ p {
 #bcg7-1-design03Logo {
     position: absolute;
     width: 773px;
-    top: 400px;
+    top: 630px;
     left: 80px;
 }
 
@@ -1344,13 +2166,13 @@ p {
     position: absolute;
     width: 700px;
     height: 100%;
-    top: 300px;
+    top: 10px;
     left: 950px;
     max-width: 100%;
     color: rgb(0,0,0);
 }
 
-/* The Edge Design */
+/* Past the Storm */
 
 #bcg7-1-design05 {
     position: absolute;
@@ -1372,14 +2194,14 @@ p {
     position: absolute;
     width: 700px;
     height: 100%;
-    top: 300px;
+    top: 10px;
     left: 950px;
     max-width: 100%;
     color: rgb(0,0,0);
 }
 
 
-/* Beyond the Clouds Design */
+/* The Edge */
 
 #bcg7-1-design06 {
     position: absolute;
@@ -1401,13 +2223,11 @@ p {
     position: absolute;
     width: 700px;
     height: 100%;
-    top: 300px;
+    top: 10px;
     left: 950px;
     max-width: 100%;
     color: rgb(0,0,0);
 }
-
-
 
 
 /* Logo Closing */
@@ -1415,201 +2235,7 @@ p {
 #bcg7-1-design07 {
     position: absolute;
     top: 8500px;
-    width: 142%;
-    height: 550px;
-    left:-330px;
-
-}
-
-/* ==========================================================================
-   Parallax Scroll copy.html
-   ========================================================================== */
-
-/*  Parallax  background - paper texture */
-
-#copy-bcg1-1 {
-    position: absolute;
-
-}
-
-/*  Parallax mid background - shadows */
-
-#copy-bcg2-1 {
-    position: absolute;
-    top: 0;
-    left: -700px;
-    background-repeat: repeat-y;
-
-}
-
-#copy-bcg2-2 {
-    position: absolute;
-    top: 2500px;
-    left: -700px;
-    background-repeat: repeat-y;
-}
-
-#copy-bcg2-3 {
-    position: absolute;
-    top: 4500px;
-    left: -700px;
-    background-repeat: repeat-y;
-
-}
-
-#copy-bcg2-4 {
-    position: absolute;
-    top: 5900px;
-    left: -700px;
-    background-repeat: repeat-y;
-}
-
-
-/* Parallax background white light */
-
-#copy-bcg3-1 {
-    position: absolute;
-    top: -400px;
-    left: -370px;
-    background-repeat: repeat-y;
-}
-
-#copy-bcg3-2 {
-    position: absolute;
-    top: -400px;
-    left: 400px;
-    max-width: 85%;
-    opacity: 0.8;
-    background-repeat: repeat-y;
-}
-
-#copy-bcg3-3 {
-    position: absolute;
-    top: 3000px;
-    left: -370px;
-    max-width: 70%;
-    background-repeat: repeat-y;
-}
-
-#copy-bcg3-4 {
-    position: absolute;
-    top: 2000px;
-    left: 400px;
-    max-width: 85%;
-    opacity: 0.8;
-    background-repeat: repeat-y;
-}
-
-#copy-bcg3-5 {
-    position: absolute;
-    top: 5550px;
-    left: -370px;
-    max-width: 70%;
-    opacity: 0.8;
-    background-repeat: repeat-y;
-}
-
-#copy-bcg3-6 {
-    position: absolute;
-    top: 7000px;
-    left: 400px;
-    max-width: 85%;
-    opacity: 0.8;
-    background-repeat: repeat-y;
-}
-
-/* Logo Intro */
-
-#bcg7-1-copy01 {
-    z-index: 4;
-    position: fixed;
-    left: 30%;
-    top: 150px;
-    width: 1200px;
-    height: 125px;
-    margin-left: -580px;
-}
-
-.bcg7-1-copy01Logo {
-    position: absolute;
-    width: 773px;
-    height: 510px;
-    top: 100px;
-    left: 250px;
-}
-
-.bcg7-1-copy01Copy {
-    position: absolute;
-    width: 700px;
-    height: 100%;
-    top: 70px;
-    left: 950px;
-    max-width: 100%;
-}
-
-/* Reach Poster*/
-
-#bcg7-1-copy02 {
-    position: absolute;
-    top: 400px;
-    width: 141%;
-    height: 550px;
-    left:-330px;
-}
-
-#bcg7-1-copy02Visual {
-    position: absolute;
-    width: 773px;
-    top: 100px;
-    left: 400px;
-
-}
-
-/* Key Poster */
-
-#bcg7-1-copy03 {
-    position: absolute;
-    top: 2000px;
-    width: 141%;
-    height: 550px;
-    left: -330px;
-}
-
-
-#bcg7-1-copy03Visual {
-    position: absolute;
-    width: 773px;
-    height: 510px;
-    top: 100px;
-    left: 400px;
-}
-
-/* Reflect Poster */
-
-#bcg7-1-copy04 {
-    position: absolute;
-    top: 3700px;
-    width: 141%;
-    height: 350px;
-    left: -350px;
-
-}
-
-#bcg7-1-copy04Visual {
-    position: absolute;
-    width: 773px;
-    height: 510px;
-    top: 100px;
-    left: 400px;
-}
-
-
-
-/* Logo Closing */
-
-#bcg7-1-copy07 {
-    position: absolute;
-    top: 5300px;
+    padding-bottom: 300px;
     width: 142%;
     height: 550px;
     left:-330px;
@@ -1617,7 +2243,8 @@ p {
 }
 
 
-/* ==========================================================================
+
+/* =====================================================================================================================
    Parallax Scroll illustration.html
    ========================================================================== */
 
@@ -1625,6 +2252,7 @@ p {
 
 #illus-bcg1-1 {
     position: absolute;
+    width: 150%;
 
 }
 
@@ -1633,7 +2261,8 @@ p {
 #illus-bcg2-1 {
     position: absolute;
     top: 600px;
-    left: -600px;
+    left: 900px;
+    width: 100%
     background-repeat: repeat-y;
 
 }
@@ -1643,6 +2272,7 @@ p {
     top: 1200px;
     left: -300px;
     background-repeat: repeat-y;
+    opacity: .80;
 }
 
 #illus-bcg2-3 {
@@ -1650,6 +2280,7 @@ p {
     top: 4500px;
     left: 200px;
     background-repeat: repeat-y;
+    opacity: .50;
 
 }
 
@@ -1658,6 +2289,7 @@ p {
     top: 5900px;
     left: 400px;
     background-repeat: repeat-y;
+    opacity: .70;
 }
 
 
@@ -1666,25 +2298,28 @@ p {
 #illus-bcg3-1 {
     position: absolute;
     top: 360px;
-    left: -220px;
+    left: 420px;
+    width: 100%;
     background-repeat: repeat-y;
 }
 
 #illus-bcg3-2 {
     position: absolute;
-    top: -400px;
-    left: 400px;
+    top: 550px;
+    left: 250px;
     max-width: 85%;
-    opacity: 0.8;
+    opacity: 0.80;
     background-repeat: repeat-y;
+
 }
 
 #illus-bcg3-3 {
     position: absolute;
     top: 1000px;
-    left: -570px;
+    left: 670px;
     max-width: 70%;
     background-repeat: repeat-y;
+    opacity: .60;
 }
 
 #illus-bcg3-4 {
@@ -1692,25 +2327,28 @@ p {
     top: 2000px;
     left: 400px;
     max-width: 85%;
-    opacity: 0.8;
+    opacity: 0.3;
     background-repeat: repeat-y;
+
 }
+
 
 #illus-bcg3-5 {
     position: absolute;
     top: 5550px;
     left: -370px;
     max-width: 70%;
-    opacity: 0.8;
+    opacity: 0.70;
     background-repeat: repeat-y;
+
 }
 
 #illus-bcg3-6 {
     position: absolute;
-    top: 7000px;
+    top: 8000px;
     left: 400px;
     max-width: 85%;
-    opacity: 0.8;
+    opacity: 0.40;
     background-repeat: repeat-y;
 }
 
@@ -1738,7 +2376,7 @@ p {
     position: absolute;
     width: 700px;
     height: 100%;
-    top: 70px;
+    top: 170px;
     left: 950px;
     max-width: 100%;
 }
@@ -1766,14 +2404,15 @@ p {
     width: 750px;
     height: 100%;
     top: 400px;
-    left: 400px;
+    left: 500px;
     max-width: 100%;
+
 }
 
 #bcg7-1-froggie {
     position: absolute;
     top: 1500px;
-    left: 1150px;
+    left: 50px;
     max-width: 100%;
 }
 
@@ -1781,30 +2420,31 @@ p {
     position: absolute;
     width: 750px;
     height: 100%;
-    top: 1400px;
-    left: 250px;
+    top: 1500px;
+    left: 400px;
     max-width: 100%;
 }
 
 #bcg7-1-character {
     position: absolute;
     top: 2600px;
-    left: 350px;
+    left: 150px;
+    max-width: 35%;
 }
 
 #bcg7-1-characterCopy {
     position: absolute;
     height: 100%;
-    top: 2500px;
+    top: 2800px;
     left: 470px;
     width: 650px;
 }
 
 #bcg7-1-story {
     position: absolute;
-    top: 3600px;
-    left: 950px;
-    max-width: 100%;
+    top: 3900px;
+    left: 680px;
+    max-width: 70%;
 }
 
 #bcg7-1-storyCopy {
@@ -1828,23 +2468,23 @@ p {
     width: 650px;
     height: 100%;
     top: 4600px;
-    left: 450px;
+    left: 500px;
     max-width: 100%;
 }
 
 #bcg7-1-digital {
     position: absolute;
     top: 5800px;
-    left: 200px;
-    max-width: 100%;
+    left: 280px;
+    max-width: 50%;
 }
 
 #bcg7-1-digitalCopy {
     position: absolute;
     width: 650px;
     height: 100%;
-    top: 4600px;
-    left: 450px;
+    top: 5900px;
+    left: 750px;
     max-width: 100%;
 }
 /* Logo Closing */
@@ -1855,10 +2495,269 @@ p {
     width: 142%;
     height: 550px;
     left:-330px;
+}
 
+.bcg7-1-illus07Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: -20px;
+    left: 250px;
+}
+
+.bcg7-1-illus07Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 170px;
+    left: 950px;
+    max-width: 100%;
+}
+
+/* Moving Froggie */
+
+#froggieArea {
+    position: absolute;
+    width: 1780px;
+    height: 800px;
+    top: 7200px;
+    left: -300px;
+}
+
+.froggie {
+    position: relative;
+    top: 130px;
+    left: 748px;
+    width: 300px;
+    height: 300px;
 }
 
 
+/* =====================================================================================================================
+   Parallax Scroll photography.html
+   ========================================================================== */
+
+/*  Parallax  background - dust specks */
+
+#photo-bcg1-1 {
+    position: absolute;
+    width:150%;
+    height: 12000px;
+
+}
+
+/*  Parallax  background - cracks */
+
+#photo-bcg2-1 {
+    position: absolute;
+    top: -200px;
+    left: 400px;
+    background-repeat: repeat-y;
+
+}
+
+#photo-bcg2-2 {
+    position: absolute;
+    top: -400px;
+    left: -800px;
+    max-width: 70%;
+    background-repeat: repeat-y;
+}
+
+#photo-bcg2-3 {
+    position: absolute;
+    top: 4500px;
+    left: 400px;
+    max-width: 60%;
+    background-repeat: repeat-y;
+
+}
+
+#photo-bcg2-4 {
+    position: absolute;
+    top: 4900px;
+    left: -800px;
+    max-width: 70%;
+    background-repeat: repeat-y;
+}
+
+
+/* Parallax background scratches */
+
+#photo-bcg3-1 {
+    position: absolute;
+    top: 0px;
+    left: -370px;
+    background-repeat: repeat-y;
+}
+
+#photo-bcg3-2 {
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    background-repeat: repeat-y;
+}
+
+#photo-bcg3-3 {
+    position: absolute;
+    top: 6000px;
+    left: -370px;
+    background-repeat: repeat-y;
+}
+
+
+#photo-bcg3-4 {
+    position: absolute;
+    top: 7500px;
+    left: 400px;
+    background-repeat: repeat-y;
+}
+
+
+#bcg7-1-photo01 {
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 300px;
+    width: 150%;
+    height: 450px;
+    background-color: rgb(255,255,255)
+}
+
+.bcg7-1-photo01Logo {
+    position: absolute;
+    width: 773px;
+    height: 510px;
+    top: 10px;
+    left: 100px;
+}
+
+.bcg7-1-photo01Copy {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    top: 70px;
+    left: 850px;
+    max-width: 100%;
+}
+
+.transition{
+    position: fixed;
+    top: 100px;
+    width: 775px;
+    height: 775px;
+    left: 500px;
+}
+
+#flowerContainer{
+    position: fixed;
+    top: 50px;
+    width: 775px;
+    height: 775px;
+    left: 400px;
+}
+
+#flowerFull {
+    position: relative;
+    top: 10px;
+    width: 770px;
+    height: 770px;
+    left: 10px;
+}
+
+#flowerLeft {
+    position: absolute;
+    top: 3475px;
+    width: 386px;
+    height: 775px;
+    left: 208px;
+}
+
+#flowerRight{
+    position: relative;
+    top: -763px;
+    width: 386px;
+    height: 775px;
+    left: 357px;
+
+}
+
+#handContainer {
+    position: fixed;
+    top: 50px;
+    width: 775px;
+    height: 775px;
+    left: 400px;
+}
+
+
+#handFull {
+    position: relative;
+    top: 10px;
+    width: 770px;
+    height: 770px;
+    left: 10px;
+}
+
+#handLeft {
+    position: absolute;
+    top: 7000px;
+    width: 386px;
+    height: 775px;
+    left: 208px;
+}
+
+#handRight {
+    position: relative;
+    top: -763px;
+    width: 386px;
+    height: 775px;
+    left: 357px;
+}
+
+#gingerContainer {
+    position: fixed;
+    top: 50px;
+    width: 775px;
+    height: 775px;
+    left: 400px;
+}
+
+#gingerFull {
+    position: relative;
+    top: 10px;
+    width: 770px;
+    height: 770px;
+    left: 10px;
+}
+
+#gingerLeft {
+    position: absolute;
+    top: 10500px;
+    width: 386px;
+    height: 775px;
+    left: 208px;
+}
+
+#gingerRight {
+    position: relative;
+    top: -763px;
+    width: 386px;
+    height: 775px;
+    left: 357px;
+
+}
+
+/* Logo Close */
+
+#bcg7-1-photo07 {
+    position: absolute;
+    top: 13500px;
+    width: 175%;
+    height: 450px;
+    left:-410px;
+    background-color: rgb(255,255,255);
+}
 
 
 
@@ -1948,158 +2847,6 @@ p {
 .slide-photography {
 
 }
-
-
-
-
-/* ==========================================================================
-   Resize Images
-   ========================================================================== */
-img.ri-1
-{
-    position: absolute;
-    max-width: 80%;
-    top: 10%;
-    left: 10%;
-}
-
-img.ri-1:empty
-{
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-img.ri-2
-{
-    position: absolute;
-    max-width: 50%;
-    top: 10%;
-    left: 10%;
-}
-
-img.ri-2:empty
-{
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-img.ri-3
-{
-    position: absolute;
-    max-width: 70%;
-    top: 10%;
-    left: 10%;
-}
-
-img.ri-3:empty
-{
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-img.ri-4
-{
-    position: absolute;
-    max-width: 90%;
-    top: 10%;
-    left: 10%;
-}
-
-img.ri-4:empty
-{
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-img.ri-5
-{
-    position: absolute;
-    max-width: 90%;
-    top: 10%;
-    left: 10%;
-}
-
-img.ri-5:empty
-{
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-img.ri-6
-{
-    position: absolute;
-    max-width: 90%;
-    top: 10%;
-    left: 10%;
-}
-
-img.ri-6:empty
-{
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-img.ri-7
-{
-    position: absolute;
-    max-width: 60%;
-    top: 10%;
-    left: 10%;
-}
-
-img.ri-7:empty
-{
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-/* =General */
-
-
-
-
-
 
 
 

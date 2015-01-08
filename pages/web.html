@@ -29,17 +29,28 @@
             })();
         </script>
 
+         <link rel="stylesheet" media="all" href="../css/main.css">
+         <link rel="stylesheet" media="screen and (max-width: 350px) and (orientation: portrait)" href="../css/responsiveMobile320.css">
+         <link rel="stylesheet" media="screen and (max-width: 480px) and (orientation: landscape)" href="../css/responsiveMobile480.css">
+         <link rel="stylesheet" media="screen and (max-width: 600px) and (orientation: portrait)" href="../css/responsiveSmTablet600.css">
+         <link rel="stylesheet" media="screen and (max-width: 800px) and (orientation: landscape)" href="../css/responsiveSmTablet800.css">
+         <link rel="stylesheet" media="screen and (max-width: 768px) and (orientation: portrait)" href="../css/responsiveTablet768.css">
+         <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)" href="../css/responsiveTablet1024.css">
+         <link rel="stylesheet" media="screen and (min-width: 1030px)" href="../css/main.css">
 
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script ty pe="text/javascript" src="../js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="../js/jquery_1.11.2/jquery-1.11.2.js"></script>
+        <script type="text/javascript" src="../js/jquery_1.11.2/jquery-1.11.2.min.js"></script>
+        <script src="../js/jquery_1.11.2/jquery-migrate-1.2.1.js"></script>
+        <script type="text/javascript" src="../js/jquery_1.11.2/jquery-migrate-1.2.1.min.js"></script>
+        <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script type="text/javascript" src="../js/skrollr.min.js"></script>
 
-        <link rel="stylesheet" media="all" href="../css/main.css">
-        <link rel="stylesheet" media="screen and (min-width: 320px)" href="../css/responsive.css">
-        <link rel="stylesheet" media="screen and (min-width: 800px)" href="../css/responsive.css">
-        <link rel="stylesheet" media="screen and (min-width: 1100px)" href="../css/main.css">
 
         <link href='http://fonts.googleapis.com/css?family=Cinzel:400,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-
-        <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
         <!-- Google Analytics code should be placed right before </head>. -->
         <script>
@@ -65,15 +76,23 @@
                 <div class="menu2">
 
                     <div></div>
-                    <a href="http://www.camendesigns.com" target="_blank">Web</a>
+                    <a href="../index.html" target="">Home</a>
                     <div></div>
-                    <a href="http://viewmyresumetoday.com" target="_blank">Copy</a>
+                    <a href="../pages/web.html" target="">Web</a>
                     <div></div>
-                    <a href="http://www.carincamenportfolio.com" target="_blank">Design</a>
+                    <a href="../pages/copy.html" target="">Copy</a>
                     <div></div>
-                    <a href="http://carillu.com" target="_blank">Illustration</a>
+                    <a href="../pages/design.html" target="">Design</a>
                     <div></div>
-                    <a href="http://cariluzen.com" target="_blank">Photography</a>
+                    <a href="../pages/illustration.html" target="">Illustration</a>
+                    <div></div>
+                    <a href="../pages/photography.html" target="">Photography</a>
+                    <div></div>
+                    <a href="https://github.com/camendesigns" target="_blank">GitHub</a>
+                    <div></div>
+                    <a href="http://www.linkedin.com/in/carincamen" target="_blank">LinkedIn</a>
+                    <div></div>
+                    <a href="http://jsfiddle.net/user/carincamen/fiddles/" target="_blank">JSFiddle</a>
                     <div></div>
                 </div>
 
@@ -83,19 +102,53 @@
 
         <div id="content">
 
-            <!-- Parallax Banner Animation  -->
+            <!-- Parallax foreground - Copy -->
+            <div id="parallax-bcg4">
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="messageBoard01">
+                    <h1 style="color: #f5f5f5" data-0="opacity: 1" data-350="opacity: 0">Interactive</h1>
+                </div>
+
+                <div class="messageBoard02">
+                    <h1 style="color: #f5f5f5" data-350="opacity: 0" data-550="opacity: 1" data-650="opacity: 0">Responsive</h1>
+                </div>
+
+                <div class="messageBoard03">
+                    <h1 style="color: #f5f5f5" data-700="opacity: 0" data-750="opacity: 1" data-1150="opacity: 0">Designs</h1>
+                </div>
+
+            </div>
+
+        <!-- Parallax Banner Animation  -->
             <div id="parallax-bcg7">
 
                 <!-- Logo Intro -->
 
                 <div id="bcg7-1-web01">
 
-                    <div class="bcg7-1-web01Logo">
-                        <a href="http://www.camendesigns.com" target="_blank">
-                            <img src="../img/logo/cd_logo.png" alt="Camen Designs Logo Link"/></a>
+                    <div class="slideMessageWeb">
+                        <div class="arrow01">
+                            <img src="../img/intro/arrow01.png" alt="Arrow">
+                        </div>
+
+                        <div class="message">
+                            <p style="color: #f5f5f5; text-align: center" > Click on logo <br> to visit site</p>
                     </div>
 
-                    <div class="bcg7-1-web01Copy" data-700="opacity: 0" data-1000="opacity: 1">
+                    </div>
+
+                    <div class="bcg7-1-web01Logo">
+                        <a href="http://www.camendesigns.com" target="_blank">
+                            <img src="../img/logo/cd_logo.png" class="ri-7" alt="Camen Designs Logo Link"/></a>
+                    </div>
+
+                    <div class="bcg7-1-web01Copy" >
                         <h1 class="title">Web</h1>
                         <h3>Exploring the Process</h3>
                         <br>
@@ -118,7 +171,7 @@
                 <div id="bcg7-1-web02">
 
                     <div id="bcg7-1-web02Logo">
-                        <img src="../img/logo/siteMap_icon.png" alt="Site Map Icon"/>
+                        <img src="../img/logo/siteMap_icon.png" class="ri-7" alt="Site Map Icon"/>
                     </div>
 
                     <div id="bcg7-1-web02Copy" data-3500="opacity: 0" data-4000="opacity: 1">
@@ -135,7 +188,7 @@
                     </div>
 
                     <div id="bcg7-1-web02Visual" data-4000="opacity: 0" data-4500="opacity: 1">
-                        <img src="../img/camenDesigns/janco_siteMap.jpg" alt="Janco Site map"/>
+                        <img src="../img/camenDesigns/janco_siteMap.jpg" class="ri-9" alt="Janco Site map"/>
                     </div>
 
                 </div>
@@ -145,7 +198,7 @@
                 <div id="bcg7-1-web03">
 
                     <div id="bcg7-1-web03Logo">
-                        <img src="../img/logo/wireFrame_icon.png" alt="Site Map Icon"/>
+                        <img src="../img/logo/wireFrame_icon.png" class="ri-7" alt="Wire Frame Icon"/>
                     </div>
 
                     <div id="bcg7-1-web03Copy" data-5300="opacity: 0" data-5800="opacity: 1">
@@ -161,7 +214,7 @@
                     </div>
 
                     <div id="bcg7-1-web03Visual" data-6000="opacity: 0" data-6500="opacity: 1">
-                        <img src="../img/camenDesigns/janco_wireFrame.jpg" alt="Janco Wire Frame"/>
+                        <img src="../img/camenDesigns/janco_wireFrame.jpg" class="ri-9" alt="Janco Wire Frame"/>
                     </div>
 
                 </div>
@@ -171,7 +224,7 @@
                 <div id="bcg7-1-web04">
 
                     <div id="bcg7-1-web04Logo">
-                        <img src="../img/logo/psMockup_icon.png" alt="Site Map Icon"/>
+                        <img src="../img/logo/psMockup_icon.png" class="ri-7" alt="Photoshop Mockup Icon"/>
                     </div>
 
                     <div id="bcg7-1-web04Copy" data-7300="opacity: 0" data-7800="opacity: 1">
@@ -190,7 +243,7 @@
                     </div>
 
                     <div id="bcg7-1-web04Visual"data-8100="opacity: 0" data-8600="opacity: 1">
-                        <img src="../img/camenDesigns/janco_psMockup.jpg" alt="Site Map Icon"/>
+                        <img src="../img/camenDesigns/janco_psMockup.jpg" class="ri-9" alt="Photoshop Mockup"/>
                     </div>
 
 
@@ -201,7 +254,7 @@
                 <div id="bcg7-1-web05">
 
                     <div id="bcg7-1-web05Logo">
-                        <img src="../img/logo/designDoc_icon.png" alt="Site Map Icon"/>
+                        <img src="../img/logo/designDoc_icon.png" class="ri-7" alt="Design Document Icon"/>
                     </div>
 
                     <div id="bcg7-1-web05Copy" data-9300="opacity: 0" data-9800="opacity: 1">
@@ -218,7 +271,7 @@
                     </div>
 
                     <div id="bcg7-1-web05Visual" data-10000="opacity: 0" data-10500="opacity: 1">
-                        <img src="../img/camenDesigns/janco_designDoc.jpg" alt="Site Map Icon"/>
+                        <img src="../img/camenDesigns/janco_designDoc.jpg" class="ri-9" alt="Design Document"/>
                     </div>
 
 
@@ -229,7 +282,7 @@
                 <div id="bcg7-1-web06">
 
                     <div id="bcg7-1-web06Logo">
-                        <img src="../img/logo/styleGuide_icon.png" alt="Site Map Icon"/>
+                        <img src="../img/logo/styleGuide_icon.png"class="ri-7" alt="Style Guide Icon"/>
                     </div>
 
                     <div id="bcg7-1-web06Copy" data-11600="opacity: 0" data-12000="opacity: 1">
@@ -249,7 +302,7 @@
                     </div>
 
                     <div id="bcg7-1-web06Visual" data-12500="opacity: 0" data-13000="opacity: 1">
-                        <img src="../img/camenDesigns/janco_styleGuide.jpg" alt="Site Map Icon"/>
+                        <img src="../img/camenDesigns/janco_styleGuide.jpg" class="ri-9" alt="Style Guide"/>
                     </div>
 
                 </div>
@@ -258,9 +311,20 @@
 
                 <div id="bcg7-1-web07">
 
+                    <div class="slideMessageWeb02">
+                        <div class="arrow01">
+                            <img src="../img/intro/arrow01.png" alt="Arrow">
+                        </div>
+
+                        <div class="message">
+                            <p style="color: #f5f5f5; text-align: center" > Click on logo <br> to visit site</p>
+                        </div>
+
+                    </div>
+
                     <div class="bcg7-1-web01Logo">
                         <a href="http://www.camendesigns.com" target="_blank">
-                            <img src="../img/logo/cd_logo.png" alt="Camen Designs Logo Link"/></a>
+                            <img src="../img/logo/cd_logo.png" class="ri-7" alt="Camen Designs Logo Link"/></a>
                     </div>
 
                     <div class="bcg7-1-web01Copy" data-700="opacity: 0" data-1000="opacity: 1">
@@ -279,66 +343,50 @@
                             <a href="mailto:carin@carincamen.com">carin@carincamen.com</a></p>
                     </div>
 
-                 </div>
+                </div>
 
             </div>
 
             <!-- Parallax mid ground - small lens flare -->
             <div id="parallax-bcg3">
-                <img id="web-bcg3-1" src="../img/bcg/web_bcg03.png" alt="Light Burst"/>
-                <img id="web-bcg3-2" src="../img/bcg/web_bcg03.png" alt="Light Burst"/>
-                <img id="web-bcg3-3" src="../img/bcg/web_bcg03.png" alt="Light Burst"/>
-                <img id="web-bcg3-4" src="../img/bcg/web_bcg03.png" alt="Light Burst"/>
+                <img id="web-bcg3-1" src="../img/bcg/web_bcg03.png" class="ri-7" alt="Light Burst"/>
+                <img id="web-bcg3-2" src="../img/bcg/web_bcg03.png" class="ri-9" alt="Light Burst"/>
+                <img id="web-bcg3-3" src="../img/bcg/web_bcg03.png" class="ri-6" alt="Light Burst"/>
+                <img id="web-bcg3-4" src="../img/bcg/web_bcg03.png" class="ri-8" alt="Light Burst"/>
 
             </div>
 
             <!-- Parallax  background - large lens flare -->
             <div id="parallax-bcg2">
-                <img id="web-bcg2-1" src="../img/bcg/web_bcg02.png" alt="Lens Flare"/>
-                <img id="web-bcg2-2" src="../img/bcg/web_bcg02.png" alt="Lens Flare"/>
-                <img id="web-bcg2-3" src="../img/bcg/web_bcg02.png" alt="Lens Flare"/>
-                <img id="web-bcg2-4" src="../img/bcg/web_bcg02.png" alt="Lens Flare"/>
+                <img id="web-bcg2-1" src="../img/bcg/web_bcg02.png" class="ri-8"alt="Lens Flare"/>
+                <img id="web-bcg2-2" src="../img/bcg/web_bcg02.png" class="ri-6"alt="Lens Flare"/>
+                <img id="web-bcg2-3" src="../img/bcg/web_bcg02.png" class="ri-9"alt="Lens Flare"/>
+                <img id="web-bcg2-4" src="../img/bcg/web_bcg02.png" class="ri-7"alt="Lens Flare"/>
             </div>
 
             <!-- Parallax  foundation - Black Mist-->
             <div id="parallax-bcg1">
                 <img id="web-bcg1-1" src="../img/bcg/web_bcg01.jpg" alt="sky"/>
+                <img id="web-bcg1-2" src="../img/bcg/web_bcg01.jpg" alt="sky"/>
             </div>
 
         </div>
 
-                    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-                    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script type="text/javascript">
+            var s = skrollr.init({
+                forceHeight: false
+            });
+        </script>
 
-                    <script type="text/javascript" src="../js/skrollr.min.js"></script>
-                    <script type="text/javascript">
-                        var s = skrollr.init({
-                            forceHeight: false
-                        });
-                    </script>
-
-                    <script src="../js/plugins.js"></script>
-                    <script src="../js/main.js"></script>
-
-                    <script type="text/javascript">
-                        var s = skrollr.init({
-                            render: function(data) {
-                                //Log the current scroll position.
-                                //console.log(data.curTop);
-                                $('#offset').text(data.curTop);
-                            }
-                        });
-                    </script>
-
-                    <script type="text/javascript">
-                        $('body').flowtype({
-                            minimum   : 500,
-                            maximum   : 1200,
-                            minFont   : 12,
-                            maxFont   : 40,
-                            fontRatio : 30
-                        });
-                    </script>
+        <script type="text/javascript">
+            var s = skrollr.init({
+                render: function(data) {
+                    //Log the current scroll position.
+                    //console.log(data.curTop);
+                    $('#offset').text(data.curTop);
+                }
+            });
+        </script>
 
     </body>
 
